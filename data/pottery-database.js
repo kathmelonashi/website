@@ -1,5 +1,7 @@
-// Pottery pieces data
-const potteryPieces = [
+// Pottery Database
+// Replace the image URLs with your own pottery photos
+
+const potteryDatabase = [
     {
         id: 0,
         title: "Rustic Clay Vase",
@@ -74,76 +76,16 @@ const potteryPieces = [
     }
 ];
 
-// Navigation functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const pages = document.querySelectorAll('.page');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            // Get the target page
-            const targetPage = this.getAttribute('data-page');
-
-            // Remove active class from all links and pages
-            navLinks.forEach(l => l.classList.remove('active'));
-            pages.forEach(p => p.classList.remove('active'));
-
-            // Add active class to clicked link and corresponding page
-            this.classList.add('active');
-            document.getElementById(targetPage).classList.add('active');
-        });
-    });
-
-    // Gallery item click handlers
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    galleryItems.forEach(item => {
-        item.addEventListener('click', function() {
-            const pieceId = parseInt(this.getAttribute('data-piece'));
-            showPieceDetail(pieceId);
-        });
-    });
-});
-
-// Show piece detail
-function showPieceDetail(pieceId) {
-    const piece = potteryPieces[pieceId];
-
-    // Update detail page content
-    document.getElementById('detail-image').src = piece.image;
-    document.getElementById('detail-title').textContent = piece.title;
-    document.getElementById('detail-price').textContent = piece.price;
-    document.getElementById('detail-story').innerHTML = `<p>${piece.story}</p>`;
-
-    // Add process images
-    const processContainer = document.getElementById('process-images');
-    processContainer.innerHTML = '';
-    piece.processImages.forEach(imgSrc => {
-        const processImg = document.createElement('div');
-        processImg.className = 'process-image';
-        processImg.innerHTML = `<img src="${imgSrc}" alt="Making process" />`;
-        processContainer.appendChild(processImg);
-    });
-
-    // Switch to detail page
-    const pages = document.querySelectorAll('.page');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    pages.forEach(p => p.classList.remove('active'));
-    navLinks.forEach(l => l.classList.remove('active'));
-
-    document.getElementById('detail').classList.add('active');
-}
-
-// Back to gallery function
-function backToGallery() {
-    const pages = document.querySelectorAll('.page');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    pages.forEach(p => p.classList.remove('active'));
-    navLinks.forEach(l => l.classList.remove('active'));
-
-    document.getElementById('gallery').classList.add('active');
-    document.querySelector('[data-page="gallery"]').classList.add('active');
-}
+// To add your own pottery pieces, follow this format:
+// {
+//     id: 6,                              // Unique ID (increment from last)
+//     title: "Your Piece Name",           // Name of the pottery piece
+//     price: "$XX",                       // Price
+//     image: "path/to/main-image.jpg",    // Main gallery image
+//     story: "Your backstory here...",    // Description of the piece
+//     processImages: [                    // Array of 3 process photos
+//         "path/to/process1.jpg",
+//         "path/to/process2.jpg",
+//         "path/to/process3.jpg"
+//     ]
+// }

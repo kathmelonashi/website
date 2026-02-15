@@ -1,0 +1,23 @@
+/* About Page Styles */
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content {
+    font-size: 20px;
+    line-height: 1.9;
+    color: var(--earth-brown);
+}
+
+.about-content p {
+    margin-bottom: 25px;
+}
+
+/* Responsive About Page */
+@media (max-width: 768px) {
+    .about-content {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,121 @@
+/* Common Styles - Shared across all pages */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clay-dark: #6B4423;
+    --terracotta: #C4774C;
+    --warm-sand: #E8D5C4;
+    --cream: #F5F1E8;
+    --sage: #9CA986;
+    --earth-brown: #8B6F47;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    background-color: var(--cream);
+    color: var(--clay-dark);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+/* Navigation Menu - Top Right */
+.nav-menu {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    gap: 30px;
+    z-index: 100;
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--clay-dark);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--terracotta);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--terracotta);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Page Transitions */
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 80px 40px 40px;
+    animation: fadeIn 0.6s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: var(--clay-dark);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .nav-menu {
+        top: 20px;
+        right: 20px;
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .page {
+        padding: 60px 20px 40px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+}

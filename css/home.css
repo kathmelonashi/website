@@ -1,0 +1,56 @@
+/* Home Page Styles */
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.pottery-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 8px 30px rgba(107, 68, 35, 0.15);
+}
+
+.home-content {
+    padding: 20px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    color: var(--clay-dark);
+    line-height: 1.2;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.home-message {
+    font-size: 20px;
+    color: var(--earth-brown);
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Responsive Home Page */
+@media (max-width: 768px) {
+    .home-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .home-message {
+        font-size: 18px;
+    }
+}

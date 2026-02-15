@@ -1,72 +1,142 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pottery Studio</title>
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Your CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
-    <div id="app-wrapper">
-        <header class="header">
-        <button class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        </header>
+    <!-- Navigation -->
+    <nav class="nav-menu">
+        <a href="#" class="nav-link active" data-page="home">Home</a>
+        <a href="#" class="nav-link" data-page="gallery">Gallery</a>
+        <a href="#" class="nav-link" data-page="about">About Me</a>
+    </nav>
 
-        <div class="menu-overlay" id="menu-overlay"></div>
-
-        <nav class="side-menu" id="side-menu">
-        <button class="menu-item" onclick="navigateTo('home')">Home</button>
-        <button class="menu-item" onclick="navigateTo('gallery')">Gallery</button>
-        <button class="menu-item" onclick="navigateTo('about')">About</button>
-        </nav>
-
-        <!-- HOME -->
-        <div id="home-tab" class="tab-content active">
-        <div class="home-page">
-            <div class="home-hero">
-            <div class="home-emoji"></div>
-            <h1 class="home-title" id="home-studio-name">My Pottery Studio</h1>
-            <p class="home-tagline" id="home-tagline">Handcrafted with Love</p>
-            <p class="home-text" id="home-about"></p>
-            <button class="cta-button" onclick="navigateTo('gallery')">
-                Explore Gallery
-            </button>
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <div class="home-container">
+            <div class="pottery-image">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&q=80" alt="Handcrafted pottery" />
             </div>
-        </div>
-        </div>
-
-        <!-- GALLERY -->
-        <div id="gallery-tab" class="tab-content">
-        <div class="gallery-page">
-            <h2 class="gallery-title">Featured Pieces</h2>
-            <div id="gallery-container" class="gallery-grid"></div>
-        </div>
-        </div>
-
-        <!-- ABOUT -->
-        <div id="about-tab" class="tab-content">
-        <div class="about-page">
-            <div class="about-container">
-            <h2 class="about-title">About My Work</h2>
-            <p class="about-content" id="about-studio-name"></p>
+            <div class="home-content">
+                <h1 class="main-title">Crafted by Hand, Made with Heart</h1>
+                <p class="home-message">
+                    Each piece tells a story of earth, fire, and time. In the quiet rhythm of the wheel,
+                    clay becomes art—imperfect, honest, and beautifully human. These vessels are meant
+                    to be held, used, and cherished in the everyday moments that make a home.
+                </p>
             </div>
-        </div>
         </div>
     </div>
 
-    <!-- Your JS -->
-    <script src="script.js"></script>
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="page">
+        <div class="gallery-container">
+            <h2 class="page-title">Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-piece="0">
+                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-piece="1">
+                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-piece="2">
+                    <img src="https://images.unsplash.com/photo-1493106819930-f87cfe32f2fd?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-piece="3">
+                    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-piece="4">
+                    <img src="https://images.unsplash.com/photo-1627916607164-7b20241db935?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-piece="5">
+                    <img src="https://images.unsplash.com/photo-1560762484-813fc97650a0?w=600&q=80" alt="Pottery piece" />
+                    <div class="gallery-item-overlay">
+                        <span>View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DETAIL VIEW -->
+    <div id="detail" class="page">
+        <div class="detail-container">
+            <button class="back-button" onclick="backToGallery()">← Back to Gallery</button>
+
+            <div class="detail-content">
+                <div class="detail-main-image">
+                    <img id="detail-image" src="" alt="Pottery piece" />
+                </div>
+
+                <div class="detail-info">
+                    <h2 id="detail-title" class="detail-title"></h2>
+                    <p id="detail-price" class="detail-price"></p>
+                    <div id="detail-story" class="detail-story"></div>
+
+                    <div class="detail-process">
+                        <h3 class="process-title">The Making Process</h3>
+                        <div id="process-images" class="process-images"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="about-container">
+            <h2 class="page-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Welcome to my pottery studio. I've been working with clay for many years,
+                    finding joy in the tactile process of creation and the meditative practice
+                    of throwing on the wheel.
+                </p>
+                <p>
+                    My work is inspired by organic forms, natural textures, and the beauty of
+                    imperfection. Each piece is handmade and unique, reflecting the marks of
+                    the making process and the character of the materials.
+                </p>
+                <p>
+                    I believe pottery should be functional as well as beautiful—pieces that
+                    bring warmth and artistry into daily life.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="data/pottery-database.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/detail.js"></script>
 </body>
 </html>

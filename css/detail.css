@@ -1,0 +1,129 @@
+/* Detail Page Styles */
+
+.detail-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    color: var(--clay-dark);
+    cursor: pointer;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: var(--terracotta);
+}
+
+.detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.detail-main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: 0 8px 30px rgba(107, 68, 35, 0.15);
+}
+
+.detail-info {
+    padding: 20px;
+}
+
+.detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: var(--clay-dark);
+    margin-bottom: 20px;
+}
+
+.detail-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: var(--terracotta);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.detail-story {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--earth-brown);
+    margin-bottom: 40px;
+}
+
+.detail-story p {
+    margin-bottom: 20px;
+}
+
+.detail-process {
+    border-top: 1px solid var(--warm-sand);
+    padding-top: 40px;
+}
+
+.process-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--clay-dark);
+    margin-bottom: 25px;
+}
+
+.process-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.process-image {
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(107, 68, 35, 0.1);
+}
+
+.process-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Detail Page */
+@media (max-width: 768px) {
+    .detail-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .detail-title {
+        font-size: 32px;
+    }
+
+    .detail-price {
+        font-size: 24px;
+    }
+
+    .detail-story {
+        font-size: 16px;
+    }
+
+    .process-title {
+        font-size: 24px;
+    }
+
+    .process-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .back-button {
+        font-size: 16px;
+    }
+}

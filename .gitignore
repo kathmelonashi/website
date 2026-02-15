@@ -1,0 +1,23 @@
+# Keep repo clean
+
+# Old files (deprecated)
+styles.css
+script.js
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Optional: Uncomment if you want to ignore actual image files
+# (useful if images are large and you prefer to store them elsewhere)
+# images/pottery/*.jpg
+# images/pottery/*.png
+# images/process/*.jpg
+# images/process/*.png
