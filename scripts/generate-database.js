@@ -36,11 +36,6 @@ function generateTitle(filename) {
         .join(' ');
 }
 
-// Generate random price between min and max
-function generatePrice(min = 45, max = 110) {
-    const price = Math.floor(Math.random() * (max - min + 1)) + min;
-    return `$${price}`;
-}
 
 // Default stories pool
 const defaultStories = [
@@ -56,12 +51,43 @@ function generateStory() {
     return defaultStories[Math.floor(Math.random() * defaultStories.length)];
 }
 
+// Read existing database to preserve prices and custom data
+function readExistingDatabase() {
+    try {
+        if (fs.existsSync(OUTPUT_FILE)) {
+            const content = fs.readFileSync(OUTPUT_FILE, 'utf8');
+            // Extract the array from the file using greedy match
+            const match = content.match(/const potteryDatabase = (\[[\s\S]*\]);/);
+            if (match) {
+                // Evaluate the JavaScript array directly instead of trying to parse as JSON
+                // This handles both single and double quotes correctly
+                const potteryDatabase = eval(match[1]);
+
+                // Create a map by image filename for quick lookup
+                const dataMap = {};
+                potteryDatabase.forEach(item => {
+                    if (item.image) {
+                        const filename = path.basename(item.image);
+                        dataMap[filename] = item;
+                    }
+                });
+                return dataMap;
+            }
+        }
+    } catch (error) {
+        console.warn(`⚠️  Could not read existing database: ${error.message}`);
+        console.warn(`    Make sure the file uses valid syntax`);
+    }
+    return {};
+}
+
 // Main function
 function generateDatabase() {
     console.log('🔍 Scanning pottery directory...');
 
     const potteryImages = getImageFiles(POTTERY_DIR);
     const processImages = getImageFiles(PROCESS_DIR);
+    const existingData = readExistingDatabase();
 
     if (potteryImages.length === 0) {
         console.error('❌ No image files found in pottery directory!');
@@ -70,11 +96,15 @@ function generateDatabase() {
 
     console.log(`✅ Found ${potteryImages.length} pottery images`);
     console.log(`✅ Found ${processImages.length} process images`);
+    console.log(`✅ Loaded ${Object.keys(existingData).length} existing entries`);
 
     // Generate database entries
     const database = potteryImages.map((filename, index) => {
         // Get the base name without extension (e.g., "bluePlatter" from "bluePlatter.jpeg")
         const baseName = path.parse(filename).name;
+
+        // Check if we have existing data for this item
+        const existing = existingData[filename];
 
         // Find matching process images (e.g., "bluePlatter-1.jpeg", "bluePlatter-2.jpeg")
         // Match: baseName-1, baseName-2, etc. (case-insensitive)
@@ -98,14 +128,25 @@ function generateDatabase() {
                     .map(img => `images/process/${img}`);
             })();
 
-        return {
-            id: index,
-            title: generateTitle(filename),
-            price: generatePrice(),
-            image: `images/pottery/${filename}`,
-            story: generateStory(),
-            processImages: selectedProcessImages
-        };
+        // For existing items, preserve everything except image and processImages
+        // For new items, generate minimal data
+        if (existing) {
+            return {
+                ...existing,
+                id: index,
+                image: `images/pottery/${filename}`,
+                processImages: selectedProcessImages
+            };
+        } else {
+            return {
+                id: index,
+                title: generateTitle(filename),
+                price: null,
+                image: `images/pottery/${filename}`,
+                story: generateStory(),
+                processImages: selectedProcessImages
+            };
+        }
     });
 
     // Generate the JavaScript file
@@ -124,7 +165,14 @@ const potteryDatabase = ${JSON.stringify(database, null, 4)};
 
     console.log(`✅ Generated ${OUTPUT_FILE}`);
     console.log(`📝 Created ${database.length} pottery entries`);
-    console.log('\n💡 Tip: You can edit the titles, prices, and stories in pottery-database.js after generation');
+
+    const preservedCount = database.filter(item => item.price !== null).length;
+    if (preservedCount > 0) {
+        console.log(`💾 Preserved prices for ${preservedCount} existing items`);
+    }
+
+    console.log('\n💡 Tip: You can edit the titles, prices, and stories in pottery-database.js');
+    console.log('   Custom prices will be preserved when you run this script again');
 }
 
 // Run the script
