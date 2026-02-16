@@ -6,7 +6,7 @@ const potteryDatabase = [
     {
         "id": 0,
         "title": "Clock",
-        "price": "Not available",
+        "price": "In Progress",
         "image": "images/pottery/clock.jpeg",
         "story": "This piece was created with intention and care, shaped by hand over hours of focused work. The clay responded beautifully to each touch, and the final form emerged naturally. The glazing process revealed unexpected color variations that make this piece truly unique.",
         "processImages": [
@@ -25,7 +25,7 @@ const potteryDatabase = [
     {
         "id": 1,
         "title": "Lemon Squizer",
-        "price": "20$",
+        "price": "In Progress",
         "image": "images/pottery/lemonSquizer.jpeg",
         "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
         "processImages": [
