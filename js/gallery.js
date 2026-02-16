@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         item.addEventListener('click', function() {
-            showPieceDetail(piece.id);
+            // Use URL hash to navigate to detail page
+            window.location.hash = `detail/${piece.id}`;
         });
         galleryGrid.appendChild(item);
     });

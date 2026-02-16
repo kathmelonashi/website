@@ -15,6 +15,14 @@ Thumbs.db
 *.swo
 *~
 
+# Node.js
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+server/.env
+
 # Optional: Uncomment if you want to ignore actual image files
 # (useful if images are large and you prefer to store them elsewhere)
 # images/pottery/*.jpg

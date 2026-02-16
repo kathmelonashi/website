@@ -4,6 +4,12 @@
 function showPieceDetail(pieceId) {
     const piece = potteryDatabase[pieceId];
 
+    if (!piece) {
+        // If piece doesn't exist, go back to gallery
+        window.location.hash = 'gallery';
+        return;
+    }
+
     // Update detail page content
     document.getElementById('detail-image').src = piece.image;
     document.getElementById('detail-title').textContent = piece.title;
@@ -32,12 +38,5 @@ function showPieceDetail(pieceId) {
 
 // Back to gallery function
 function backToGallery() {
-    const pages = document.querySelectorAll('.page');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    pages.forEach(p => p.classList.remove('active'));
-    navLinks.forEach(l => l.classList.remove('active'));
-
-    document.getElementById('gallery').classList.add('active');
-    document.querySelector('[data-page="gallery"]').classList.add('active');
+    window.location.hash = 'gallery';
 }
