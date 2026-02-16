@@ -73,12 +73,30 @@ function generateDatabase() {
 
     // Generate database entries
     const database = potteryImages.map((filename, index) => {
-        // Randomly select 3 process images for this piece
-        const selectedProcessImages = [];
-        const shuffled = [...processImages].sort(() => 0.5 - Math.random());
-        for (let i = 0; i < Math.min(3, shuffled.length); i++) {
-            selectedProcessImages.push(`images/process/${shuffled[i]}`);
-        }
+        // Get the base name without extension (e.g., "bluePlatter" from "bluePlatter.jpeg")
+        const baseName = path.parse(filename).name;
+
+        // Find matching process images (e.g., "bluePlatter-1.jpeg", "bluePlatter-2.jpeg")
+        // Match: baseName-1, baseName-2, etc. (case-insensitive)
+        const matchingProcessImages = processImages
+            .filter(processFile => {
+                const processBaseName = path.parse(processFile).name.toLowerCase();
+                const potteryBaseName = baseName.toLowerCase();
+                // Match if process file starts with pottery base name followed by hyphen and number
+                return processBaseName.startsWith(potteryBaseName + '-') ||
+                       processBaseName.startsWith(potteryBaseName.replace(/\s+/g, '').toLowerCase() + '-');
+            })
+            .sort() // Sort to get consistent ordering (1, 2, 3, etc.)
+            .map(processFile => `images/process/${processFile}`);
+
+        // If no matching process images, fall back to random selection
+        const selectedProcessImages = matchingProcessImages.length > 0
+            ? matchingProcessImages
+            : (() => {
+                const shuffled = [...processImages].sort(() => 0.5 - Math.random());
+                return shuffled.slice(0, Math.min(3, shuffled.length))
+                    .map(img => `images/process/${img}`);
+            })();
 
         return {
             id: index,
