@@ -1,13 +1,23 @@
 // Gallery functionality
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Gallery item click handlers
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // Build gallery dynamically from the database
+    const galleryGrid = document.querySelector('.gallery-grid');
+    galleryGrid.innerHTML = '';
 
-    galleryItems.forEach(item => {
+    potteryDatabase.forEach(piece => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.setAttribute('data-piece', piece.id);
+        item.innerHTML = `
+            <img src="${piece.image}" alt="${piece.title}" />
+            <div class="gallery-item-overlay">
+                <span>View Details</span>
+            </div>
+        `;
         item.addEventListener('click', function() {
-            const pieceId = parseInt(this.getAttribute('data-piece'));
-            showPieceDetail(pieceId);
+            showPieceDetail(piece.id);
         });
+        galleryGrid.appendChild(item);
     });
 });

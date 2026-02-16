@@ -15,6 +15,15 @@
     height: auto;
     border-radius: 2px;
     box-shadow: 0 8px 30px rgba(107, 68, 35, 0.15);
+    object-fit: cover;
+}
+
+.pottery-image video {
+    width: 100%;
+    aspect-ratio: 1 / 1.4;
+    object-fit: cover;
+    object-position: center 30%;
+    clip-path: url(#vase-clip);
 }
 
 .home-content {

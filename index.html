@@ -17,6 +17,31 @@
 </head>
 
 <body>
+    <!-- SVG Vase Clip Path -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <clipPath id="vase-clip" clipPathUnits="objectBoundingBox">
+                <path d="
+                    M 0.38,0  L 0.62,0
+                    C 0.68,0 0.72,0.02 0.70,0.04
+                    C 0.66,0.06 0.63,0.08 0.62,0.12
+                    C 0.61,0.16 0.62,0.20 0.65,0.25
+                    C 0.75,0.32 0.90,0.42 0.95,0.55
+                    C 1.00,0.68 0.95,0.80 0.85,0.88
+                    C 0.78,0.94 0.70,0.97 0.65,0.98
+                    L 0.35,0.98
+                    C 0.30,0.97 0.22,0.94 0.15,0.88
+                    C 0.05,0.80 0.00,0.68 0.05,0.55
+                    C 0.10,0.42 0.25,0.32 0.35,0.25
+                    C 0.38,0.20 0.39,0.16 0.38,0.12
+                    C 0.37,0.08 0.34,0.06 0.30,0.04
+                    C 0.28,0.02 0.32,0 0.38,0
+                    Z
+                " />
+            </clipPath>
+        </defs>
+    </svg>
+
     <!-- Navigation -->
     <nav class="nav-menu">
         <a href="#" class="nav-link active" data-page="home">Home</a>
@@ -28,7 +53,9 @@
     <div id="home" class="page active">
         <div class="home-container">
             <div class="pottery-image">
-                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=800&q=80" alt="Handcrafted pottery" />
+                <video autoplay loop muted playsinline>
+                    <source src="videos/IMG_9253.mov" type="video/mp4">
+                </video>
             </div>
             <div class="home-content">
                 <h1 class="main-title">Crafted by Hand, Made with Heart</h1>
@@ -46,42 +73,7 @@
         <div class="gallery-container">
             <h2 class="page-title">Gallery</h2>
             <div class="gallery-grid">
-                <div class="gallery-item" data-piece="0">
-                    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-piece="1">
-                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-piece="2">
-                    <img src="https://images.unsplash.com/photo-1493106819930-f87cfe32f2fd?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-piece="3">
-                    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-piece="4">
-                    <img src="https://images.unsplash.com/photo-1627916607164-7b20241db935?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-piece="5">
-                    <img src="https://images.unsplash.com/photo-1560762484-813fc97650a0?w=600&q=80" alt="Pottery piece" />
-                    <div class="gallery-item-overlay">
-                        <span>View Details</span>
-                    </div>
-                </div>
+                <!-- Gallery items are generated dynamically from pottery-database.js -->
             </div>
         </div>
     </div>
@@ -116,18 +108,17 @@
             <h2 class="page-title">About Me</h2>
             <div class="about-content">
                 <p>
-                    Welcome to my pottery studio. I've been working with clay for many years,
-                    finding joy in the tactile process of creation and the meditative practice
-                    of throwing on the wheel.
+                    I fell in love with ceramics and the art of pottery in 2025. 
+                    It has been one of the most fulfilling creative experiences of my life. 
+                    Working with clay brings me back to a sense of childhood wonder. 
+                    Every day, I practice the art of patience, giving each piece the time, care, 
+                    and intention it needs to become something truly special.
                 </p>
                 <p>
-                    My work is inspired by organic forms, natural textures, and the beauty of
-                    imperfection. Each piece is handmade and unique, reflecting the marks of
-                    the making process and the character of the materials.
-                </p>
-                <p>
-                    I believe pottery should be functional as well as beautiful—pieces that
-                    bring warmth and artistry into daily life.
+                    This website is a space to share my work and the pieces that have come from that journey. 
+                    Sometimes it’s hard to let them go, but some are available for purchase. 
+                    If a particular piece speaks to you, or you’re interested in owning one, 
+                    please feel free to reach out.
                 </p>
             </div>
         </div>
