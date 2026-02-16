@@ -7,6 +7,7 @@ A clean, elegant pottery website with earth tones featuring a home page, gallery
 ```
 website/
 ├── index.html              # Main HTML file
+├── package.json           # NPM scripts and project config
 ├── css/                    # Stylesheets (organized by section)
 │   ├── common.css         # Shared styles and navigation
 │   ├── home.css           # Home page styles
@@ -18,8 +19,10 @@ website/
 │   ├── gallery.js         # Gallery interactions
 │   ├── detail.js          # Detail view logic
 │   └── contact.js         # Contact form handler
+├── scripts/                # Build and generation scripts
+│   └── generate-database.js # Auto-generate pottery database from images
 ├── data/                   # Database files
-│   └── pottery-database.js # Pottery pieces data
+│   └── pottery-database.js # Pottery pieces data (auto-generated)
 ├── images/                 # Your pottery photos
 │   ├── pottery/           # Main product images
 │   ├── process/           # Process/making images
@@ -38,10 +41,15 @@ website/
    - Place pottery photos in `images/pottery/`
    - Place process photos in `images/process/`
 
-2. **Update the Database**
-   - Edit `data/pottery-database.js`
-   - Replace placeholder URLs with your image paths
-   - Update titles, prices, and stories
+2. **Auto-Generate Gallery Database**
+   ```bash
+   npm run update-gallery
+   ```
+   This will automatically:
+   - Scan all images in `images/pottery/`
+   - Generate entries with titles, prices, and stories
+   - Update `data/pottery-database.js`
+   - After generation, you can manually edit titles, prices, and stories in the database file
 
 3. **Customize Content**
    - Edit text in `index.html` (home message, about section)
@@ -82,10 +90,19 @@ Edit CSS variables in `css/common.css`:
 }
 ```
 
-### Adding Pottery Pieces
-1. Add images to `images/pottery/` and `images/process/`
-2. Add entry to `data/pottery-database.js`
-3. Add corresponding gallery item in `index.html`
+### Adding Pottery Pieces (Automatic Method)
+1. Drop your new pottery images into `images/pottery/`
+2. Run `npm run update-gallery`
+3. Optionally edit the generated entries in `data/pottery-database.js` to customize titles, prices, and stories
+
+The script automatically:
+- Generates titles from filenames (e.g., "blueVase.jpeg" → "Blue Vase")
+- Creates random prices between $45-$110
+- Assigns random process images from `images/process/`
+- Writes generic but thoughtful stories (you can customize these after generation)
+
+**Supported formats:** .jpg, .jpeg, .png, .gif, .webp
+**Note:** Convert .heic files to .jpeg before adding them
 
 ## Contact Form Setup
 

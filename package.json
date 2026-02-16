@@ -1,0 +1,11 @@
+{
+  "name": "pottery-website",
+  "version": "1.0.0",
+  "description": "Personal pottery gallery website",
+  "scripts": {
+    "update-gallery": "node scripts/generate-database.js"
+  },
+  "keywords": ["pottery", "gallery"],
+  "author": "",
+  "license": "ISC"
+}

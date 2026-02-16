@@ -1,5 +1,10 @@
 /* Home Page Styles */
 
+#home {
+    overflow: hidden;
+    height: 100vh;
+}
+
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,6 +32,7 @@
 }
 
 .home-content {
+    position: relative;
     padding: 20px;
 }
 
@@ -45,6 +51,29 @@
     color: var(--earth-brown);
     line-height: 1.8;
     font-weight: 400;
+}
+
+.gallery-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    color: var(--clay-dark);
+    background-color: transparent;
+    border: 2px solid var(--clay-dark);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.gallery-button:hover {
+    background-color: var(--clay-dark);
+    color: var(--soft-cream);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(107, 68, 35, 0.2);
 }
 
 /* Responsive Home Page */
