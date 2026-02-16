@@ -263,6 +263,14 @@ const potteryDatabase = [
     },
     {
         "id": 21,
+        "title": "Christmas Tree Cup",
+        "price": "Using it",
+        "image": "images/pottery/christmasTreeCup.jpeg",
+        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "processImages": []
+    },
+    {
+        "id": 22,
         "title": "Yellow Filxhan",
         "price": "5$",
         "image": "images/pottery/yellowFilxhan.jpeg",
@@ -272,7 +280,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 22,
+        "id": 23,
         "title": "My Tools Holder",
         "price": "Not available",
         "image": "images/pottery/myToolsHolder.jpeg",
@@ -280,7 +288,7 @@ const potteryDatabase = [
         "processImages": []
     },
     {
-        "id": 23,
+        "id": 24,
         "title": "First Piece Ever",
         "price": "Doesn't make sense to sell it",
         "image": "images/pottery/firstPieceEver.jpeg",
