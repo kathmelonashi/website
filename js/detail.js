@@ -20,6 +20,72 @@ function showPieceDetail(pieceId) {
     document.getElementById('detail-price').textContent = piece.price;
     document.getElementById('detail-story').innerHTML = `<p>${piece.story}</p>`;
 
+    // Add cart section after price
+    const priceElement = document.getElementById('detail-price');
+
+    // Remove existing cart section if any
+    const existingCartSection = document.querySelector('.detail-cart-section');
+    if (existingCartSection) {
+        existingCartSection.remove();
+    }
+
+    // Create cart section
+    const cartSection = document.createElement('div');
+    cartSection.className = 'detail-cart-section';
+
+    if (cartManager.isItemPurchasable(piece)) {
+        // Item is purchasable - show cart controls
+        cartSection.innerHTML = `
+            <div class="detail-cart-controls">
+                <label for="detail-quantity">Quantity:</label>
+                <select id="detail-quantity" class="quantity-select">
+                    ${[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(n => `<option value="${n}">${n}</option>`).join('')}
+                </select>
+                <button id="detail-add-to-cart" class="primary-button">Add to Cart</button>
+            </div>
+        `;
+
+        // Insert after price
+        priceElement.parentNode.insertBefore(cartSection, priceElement.nextSibling);
+
+        // Add click handler for Add to Cart button
+        setTimeout(() => {
+            const addButton = document.getElementById('detail-add-to-cart');
+            const quantitySelect = document.getElementById('detail-quantity');
+
+            if (addButton) {
+                addButton.addEventListener('click', () => {
+                    const quantity = parseInt(quantitySelect.value);
+                    const result = cartManager.addItem(piece.id, quantity);
+
+                    if (result.success) {
+                        // Show success feedback
+                        const originalText = addButton.textContent;
+                        addButton.textContent = `Added ${quantity} to Cart!`;
+                        addButton.disabled = true;
+
+                        setTimeout(() => {
+                            addButton.textContent = originalText;
+                            addButton.disabled = false;
+                        }, 1500);
+                    } else {
+                        alert(result.message);
+                    }
+                });
+            }
+        }, 0);
+    } else {
+        // Item is not purchasable - show unavailable message
+        cartSection.innerHTML = `
+            <button class="unavailable-button" disabled>Currently Unavailable</button>
+            <p class="unavailable-message">
+                This piece is ${piece.price.toLowerCase()}.
+                Please contact me if interested in similar items.
+            </p>
+        `;
+        priceElement.parentNode.insertBefore(cartSection, priceElement.nextSibling);
+    }
+
     // Add process images
     const processContainer = document.getElementById('process-images');
     processContainer.innerHTML = '';

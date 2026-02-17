@@ -1,0 +1,80 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD-1771296270128",
+      "items": [
+        {
+          "id": 3,
+          "title": "Yellow Espresso Cup",
+          "price": 10,
+          "priceDisplay": "10$",
+          "image": "images/pottery/yellowEspressoCup.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 22,
+          "title": "Yellow Filxhan",
+          "price": 5,
+          "priceDisplay": "5$",
+          "image": "images/pottery/yellowFilxhan.jpeg",
+          "quantity": 1
+        }
+      ],
+      "customer": {
+        "name": "test",
+        "email": "kathleenmelonashi@gmail.com",
+        "phone": "3128660422",
+        "address": "2022 S Throop St, 4W",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608-3116",
+        "country": "United States",
+        "notes": ""
+      },
+      "subtotal": 15,
+      "shipping": null,
+      "total": 15,
+      "status": "pending",
+      "paymentStatus": "pending",
+      "createdAt": "2026-02-17T02:44:30.128Z"
+    },
+    {
+      "orderId": "ORD-1771296280048",
+      "items": [
+        {
+          "id": 3,
+          "title": "Yellow Espresso Cup",
+          "price": 10,
+          "priceDisplay": "10$",
+          "image": "images/pottery/yellowEspressoCup.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 22,
+          "title": "Yellow Filxhan",
+          "price": 5,
+          "priceDisplay": "5$",
+          "image": "images/pottery/yellowFilxhan.jpeg",
+          "quantity": 1
+        }
+      ],
+      "customer": {
+        "name": "test",
+        "email": "kathleenmelonashi@gmail.com",
+        "phone": "3128660422",
+        "address": "2022 S Throop St, 4W",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608-3116",
+        "country": "United States",
+        "notes": "test"
+      },
+      "subtotal": 15,
+      "shipping": null,
+      "total": 15,
+      "status": "pending",
+      "paymentStatus": "pending",
+      "createdAt": "2026-02-17T02:44:40.048Z"
+    }
+  ]
+}
