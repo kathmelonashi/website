@@ -6,9 +6,8 @@ const potteryDatabase = [
     {
         "id": 0,
         "title": "Clock",
-        "price": "In Progress",
         "image": "images/pottery/clock.jpeg",
-        "story": "This piece was created with intention and care, shaped by hand over hours of focused work. The clay responded beautifully to each touch, and the final form emerged naturally. The glazing process revealed unexpected color variations that make this piece truly unique.",
+        "story": "This was my first slip-casting mold that I made. I found this metal plate at a vintage store in my neighborhood. Originally, I planned to turn it into a clock, but I ended up creating a decorative piece instead. I considered making plates from it, but when the first mold came out, it just felt like it wanted to be a clock.",
         "processImages": [
             "images/process/clock-1.jpeg",
             "images/process/clock-2.jpeg",
@@ -25,9 +24,8 @@ const potteryDatabase = [
     {
         "id": 1,
         "title": "Lemon Squizer",
-        "price": "In Progress",
         "image": "images/pottery/lemonSquizer.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": [
             "images/process/lemonSquizer-1.jpeg",
             "images/process/lemonSquizer-2.jpeg",
@@ -38,9 +36,8 @@ const potteryDatabase = [
     {
         "id": 2,
         "title": "Blue Vase",
-        "price": "Not available",
         "image": "images/pottery/blueVase.jpeg",
-        "story": "This piece emerged from experimentation with form and glaze. The clay was worked slowly, allowing organic imperfections to become part of its story. What began as an idea evolved into something more—a vessel that holds both purpose and presence.",
+        "story": "No story",
         "processImages": [
             "images/process/blueVase-1.jpeg",
             "images/process/blueVase-2.jpeg",
@@ -50,9 +47,8 @@ const potteryDatabase = [
     {
         "id": 3,
         "title": "Yellow Espresso Cup",
-        "price": "10$",
         "image": "images/pottery/yellowEspressoCup.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/yellowEspressoCup-1.jpeg",
             "images/process/yellowEspressoCup-2.jpeg"
@@ -61,9 +57,8 @@ const potteryDatabase = [
     {
         "id": 4,
         "title": "Yellow Vase",
-        "price": "20$",
         "image": "images/pottery/yellowVase.jpeg",
-        "story": "Thrown on the wheel during a quiet morning, this piece carries a sense of calm and presence. Every curve was considered, every surface smoothed with patience. The firing brought out tones that shift in different light, inviting closer observation.",
+        "story": "No story",
         "processImages": [
             "images/process/yellowVase-1.jpeg",
             "images/process/yellowVase-2.jpeg",
@@ -73,9 +68,8 @@ const potteryDatabase = [
     {
         "id": 5,
         "title": "Purple Vase",
-        "price": "20$",
         "image": "images/pottery/purpleVase.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/purpleVase-1.jpeg",
             "images/process/purpleVase-2.jpeg",
@@ -85,9 +79,8 @@ const potteryDatabase = [
     {
         "id": 6,
         "title": "Blue Platter",
-        "price": "20$",
         "image": "images/pottery/bluePlatter.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/bluePlatter-1.jpeg",
             "images/process/bluePlatter-2.jpeg",
@@ -101,9 +94,8 @@ const potteryDatabase = [
     {
         "id": 7,
         "title": "Crocodile Incense Burner",
-        "price": "Not available",
         "image": "images/pottery/crocodileIncenseBurner.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": [
             "images/process/crocodileIncenseBurner-1.jpeg",
             "images/process/crocodileIncenseBurner-2.jpeg",
@@ -119,9 +111,8 @@ const potteryDatabase = [
     {
         "id": 8,
         "title": "Ashtray",
-        "price": "Not available",
         "image": "images/pottery/ashtray.jpeg",
-        "story": "Thrown on the wheel during a quiet morning, this piece carries a sense of calm and presence. Every curve was considered, every surface smoothed with patience. The firing brought out tones that shift in different light, inviting closer observation.",
+        "story": "No story",
         "processImages": [
             "images/process/ashtray-1.jpeg",
             "images/process/ashtray-2.jpeg",
@@ -134,9 +125,8 @@ const potteryDatabase = [
     {
         "id": 9,
         "title": "Pink Ashtray",
-        "price": "Too hard to let go",
         "image": "images/pottery/pinkAshtray.jpeg",
-        "story": "This piece emerged from experimentation with form and glaze. The clay was worked slowly, allowing organic imperfections to become part of its story. What began as an idea evolved into something more—a vessel that holds both purpose and presence.",
+        "story": "No story",
         "processImages": [
             "images/process/pinkAshtray-1.jpeg",
             "images/process/pinkAshtray-2.jpeg",
@@ -146,9 +136,8 @@ const potteryDatabase = [
     {
         "id": 10,
         "title": "Cat Bowls",
-        "price": "Not available",
         "image": "images/pottery/catBowls.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": [
             "images/process/catBowls-1.jpeg",
             "images/process/catBowls-2.jpeg"
@@ -157,9 +146,8 @@ const potteryDatabase = [
     {
         "id": 11,
         "title": "Soap Holder",
-        "price": "Not available",
         "image": "images/pottery/SoapHolder.jpeg",
-        "story": "This piece was created with intention and care, shaped by hand over hours of focused work. The clay responded beautifully to each touch, and the final form emerged naturally. The glazing process revealed unexpected color variations that make this piece truly unique.",
+        "story": "No story",
         "processImages": [
             "images/process/soapHolder-1.jpeg",
             "images/process/soapHolder-2.jpeg",
@@ -170,17 +158,15 @@ const potteryDatabase = [
     {
         "id": 12,
         "title": "Pink Bowl",
-        "price": "Not available",
         "image": "images/pottery/pinkBowl.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": []
     },
     {
         "id": 13,
         "title": "Coffee And Sugar jars",
-        "price": "30$",
         "image": "images/pottery/coffeeAndSugarjars.jpeg",
-        "story": "This piece emerged from experimentation with form and glaze. The clay was worked slowly, allowing organic imperfections to become part of its story. What began as an idea evolved into something more—a vessel that holds both purpose and presence.",
+        "story": "No story",
         "processImages": [
             "images/process/coffeeAndSugarJars-1.jpeg",
             "images/process/coffeeAndSugarJars-2.jpeg"
@@ -189,9 +175,8 @@ const potteryDatabase = [
     {
         "id": 14,
         "title": "Blue Ashtray",
-        "price": "Not available",
         "image": "images/pottery/blueAshtray.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": [
             "images/process/blueAshtray-1.jpeg",
             "images/process/blueAshtray-2.jpeg"
@@ -200,9 +185,8 @@ const potteryDatabase = [
     {
         "id": 15,
         "title": "3crookedcups",
-        "price": "Not available",
         "image": "images/pottery/3crookedcups.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "No story",
         "processImages": [
             "images/process/3crookedcups-1.jpeg"
         ]
@@ -210,9 +194,8 @@ const potteryDatabase = [
     {
         "id": 16,
         "title": "Green Dumpings Plate",
-        "price": "Not available",
         "image": "images/pottery/greenDumpingsPlate.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/greenDumpingsPlate-1.jpeg",
             "images/process/greenDumpingsPlate-2.jpeg",
@@ -224,9 +207,8 @@ const potteryDatabase = [
     {
         "id": 17,
         "title": "Ring Holder",
-        "price": "Not available",
         "image": "images/pottery/ringHolder.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/ringHolder-1.jpeg",
             "images/process/ringHolder-2.jpeg",
@@ -238,9 +220,8 @@ const potteryDatabase = [
     {
         "id": 18,
         "title": "Black And Yellow Ashtrays",
-        "price": "Not available",
         "image": "images/pottery/blackAndYellowAshtrays.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/blackAndYellowAshtrays-1.jpeg",
             "images/process/blackAndYellowAshtrays-2.jpeg",
@@ -252,9 +233,8 @@ const potteryDatabase = [
     {
         "id": 19,
         "title": "Black Mug",
-        "price": "Not available",
         "image": "images/pottery/blackMug.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/blackMug-1.jpeg",
             "images/process/blackMug-2.jpeg"
@@ -263,9 +243,8 @@ const potteryDatabase = [
     {
         "id": 20,
         "title": "Blue Q Tip Holder",
-        "price": "10$",
         "image": "images/pottery/blueQTipHolder.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": [
             "images/process/blueQTipHolder-1.jpeg"
         ]
@@ -273,9 +252,8 @@ const potteryDatabase = [
     {
         "id": 21,
         "title": "Blue Swirly Cup",
-        "price": "Not available",
         "image": "images/pottery/blueSwirlyCup.jpeg",
-        "story": "This piece was created with intention and care, shaped by hand over hours of focused work. The clay responded beautifully to each touch, and the final form emerged naturally. The glazing process revealed unexpected color variations that make this piece truly unique.",
+        "story": "No story",
         "processImages": [
             "images/process/blueSwirlyCup-1.jpeg",
             "images/process/blueSwirlyCup-2.jpeg"
@@ -284,25 +262,22 @@ const potteryDatabase = [
     {
         "id": 22,
         "title": "Pink Espresso Shot",
-        "price": "Not available",
         "image": "images/pottery/pinkEspressoShot.jpeg",
-        "story": "This piece emerged from experimentation with form and glaze. The clay was worked slowly, allowing organic imperfections to become part of its story. What began as an idea evolved into something more—a vessel that holds both purpose and presence.",
+        "story": "No story",
         "processImages": []
     },
     {
         "id": 23,
         "title": "Christmas Tree Cup",
-        "price": "Using it",
         "image": "images/pottery/christmasTreeCup.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "No story",
         "processImages": []
     },
     {
         "id": 24,
-        "title": "Yellow Filxhan",
-        "price": "5$",
+        "title": "Leopard Cup",
         "image": "images/pottery/yellowFilxhan.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "I tried to make more functional things as I progressed (literally my 3rd piece). So I made this cute espresso cup with a little plate. ",
         "processImages": [
             "images/process/yellowFilxhan-1.jpeg"
         ]
@@ -310,17 +285,15 @@ const potteryDatabase = [
     {
         "id": 25,
         "title": "My Tools Holder",
-        "price": "Not available",
         "image": "images/pottery/myToolsHolder.jpeg",
-        "story": "Created with both function and beauty in mind, this piece went through multiple stages of refinement. The glazing was layered carefully to create depth, and the firing revealed a surface that invites you to pick it up and feel its weight and balance.",
+        "story": "After making my first piece and loving the glaze, I wanted to make something that I could use in my pottery process. I made a holder for my tools.",
         "processImages": []
     },
     {
         "id": 26,
         "title": "First Piece Ever",
-        "price": "Doesn't make sense to sell it",
         "image": "images/pottery/firstPieceEver.jpeg",
-        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "story": "This was the first piece I ever made. I had no idea what I was doing but I love how the glaze turned out.",
         "processImages": [
             "images/process/firstPieceEver-1.jpeg"
         ]
@@ -329,4 +302,4 @@ const potteryDatabase = [
 
 // To customize a piece, edit it directly in this file
 // Running update-gallery will ONLY update image and processImages paths
-// Everything else (title, price, story, order) is preserved
+// Everything else (title, order) is preserved

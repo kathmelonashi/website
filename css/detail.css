@@ -46,23 +46,10 @@
     margin-bottom: 20px;
 }
 
-.detail-price {
-    font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    color: var(--terracotta);
-    margin-bottom: 30px;
-    font-weight: 600;
-}
-
 .detail-story {
     font-size: 18px;
-    line-height: 1.8;
     color: var(--earth-brown);
     margin-bottom: 40px;
-}
-
-.detail-story p {
-    margin-bottom: 20px;
 }
 
 /* Contact Prompt */
@@ -220,9 +207,6 @@
         font-size: 24px;
     }
 
-    .detail-story {
-        font-size: 16px;
-    }
 
     .process-title {
         font-size: 24px;

@@ -17,8 +17,7 @@ function showPieceDetail(pieceId) {
     // Update detail page content
     document.getElementById('detail-image').src = piece.image;
     document.getElementById('detail-title').textContent = piece.title;
-    document.getElementById('detail-price').textContent = piece.price;
-    document.getElementById('detail-story').innerHTML = `<p>${piece.story}</p>`;
+    document.getElementById('detail-story').textContent = piece.story;
 
     // Add process images
     const processContainer = document.getElementById('process-images');
