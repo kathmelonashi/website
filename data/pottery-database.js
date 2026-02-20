@@ -209,6 +209,34 @@ const potteryDatabase = [
     },
     {
         "id": 16,
+        "title": "Green Dumpings Plate",
+        "price": "Not available",
+        "image": "images/pottery/greenDumpingsPlate.jpeg",
+        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "processImages": [
+            "images/process/greenDumpingsPlate-1.jpeg",
+            "images/process/greenDumpingsPlate-2.jpeg",
+            "images/process/greenDumpingsPlate-3.jpeg",
+            "images/process/greenDumpingsPlate-4.jpeg",
+            "images/process/greenDumpingsPlate-5.jpeg"
+        ]
+    },
+    {
+        "id": 17,
+        "title": "Ring Holder",
+        "price": "Not available",
+        "image": "images/pottery/ringHolder.jpeg",
+        "story": "Formed from stoneware clay, this piece celebrates the natural beauty of the material. The texture and color are honest expressions of earth and fire working together. It's designed to be used, touched, and appreciated daily.",
+        "processImages": [
+            "images/process/ringHolder-1.jpeg",
+            "images/process/ringHolder-2.jpeg",
+            "images/process/ringHolder-3.jpeg",
+            "images/process/ringHolder-4.jpeg",
+            "images/process/ringHolder-5.jpeg"
+        ]
+    },
+    {
+        "id": 18,
         "title": "Black And Yellow Ashtrays",
         "price": "Not available",
         "image": "images/pottery/blackAndYellowAshtrays.jpeg",
@@ -222,7 +250,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 17,
+        "id": 19,
         "title": "Black Mug",
         "price": "Not available",
         "image": "images/pottery/blackMug.jpeg",
@@ -233,7 +261,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 18,
+        "id": 20,
         "title": "Blue Q Tip Holder",
         "price": "10$",
         "image": "images/pottery/blueQTipHolder.jpeg",
@@ -243,7 +271,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 19,
+        "id": 21,
         "title": "Blue Swirly Cup",
         "price": "Not available",
         "image": "images/pottery/blueSwirlyCup.jpeg",
@@ -254,7 +282,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 20,
+        "id": 22,
         "title": "Pink Espresso Shot",
         "price": "Not available",
         "image": "images/pottery/pinkEspressoShot.jpeg",
@@ -262,7 +290,7 @@ const potteryDatabase = [
         "processImages": []
     },
     {
-        "id": 21,
+        "id": 23,
         "title": "Christmas Tree Cup",
         "price": "Using it",
         "image": "images/pottery/christmasTreeCup.jpeg",
@@ -270,7 +298,7 @@ const potteryDatabase = [
         "processImages": []
     },
     {
-        "id": 22,
+        "id": 24,
         "title": "Yellow Filxhan",
         "price": "5$",
         "image": "images/pottery/yellowFilxhan.jpeg",
@@ -280,7 +308,7 @@ const potteryDatabase = [
         ]
     },
     {
-        "id": 23,
+        "id": 25,
         "title": "My Tools Holder",
         "price": "Not available",
         "image": "images/pottery/myToolsHolder.jpeg",
@@ -288,7 +316,7 @@ const potteryDatabase = [
         "processImages": []
     },
     {
-        "id": 24,
+        "id": 26,
         "title": "First Piece Ever",
         "price": "Doesn't make sense to sell it",
         "image": "images/pottery/firstPieceEver.jpeg",
