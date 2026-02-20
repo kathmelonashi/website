@@ -51,6 +51,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetLink) {
                 targetLink.classList.add('active');
             }
+
+            // Restore gallery scroll position when going back to gallery
+            if (pageName === 'gallery') {
+                const savedScrollY = sessionStorage.getItem('galleryScrollY');
+                if (savedScrollY !== null) {
+                    sessionStorage.removeItem('galleryScrollY');
+                    requestAnimationFrame(() => {
+                        window.scrollTo(0, parseInt(savedScrollY));
+                    });
+                }
+            }
         }
     }
 

@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         item.addEventListener('click', function() {
+            // Save scroll position so we can restore it when going back
+            sessionStorage.setItem('galleryScrollY', window.scrollY);
             // Use URL hash to navigate to detail page
             window.location.hash = `detail/${piece.id}`;
         });
