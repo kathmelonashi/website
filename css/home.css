@@ -78,17 +78,44 @@
 
 /* Responsive Home Page */
 @media (max-width: 768px) {
+    #home {
+        padding: 60px 0 0;
+    }
+
     .home-container {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding: 40px 20px;
+        grid-template-rows: auto auto;
+        gap: 16px;
+        padding: 0 20px 20px;
+        min-height: unset;
+        height: calc(100vh - 60px);
+        align-items: start;
+    }
+
+    .pottery-image video {
+        max-height: 44vh;
+        width: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .main-title {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 12px;
     }
 
     .home-message {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .gallery-button {
+        margin-top: 14px;
+        padding: 10px 24px;
+        font-size: 16px;
     }
 }
