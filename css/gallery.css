@@ -69,4 +69,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }
+
+    .gallery-item-overlay span {
+        font-size: 10px;
+        text-align: center;
+        padding: 0 4px;
+    }
 }
