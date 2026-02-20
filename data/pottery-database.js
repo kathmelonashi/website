@@ -147,7 +147,7 @@ const potteryDatabase = [
         "id": 11,
         "title": "Soap Holder",
         "image": "images/pottery/SoapHolder.jpeg",
-        "story": "No story",
+        "story": "This was the first piece that I tried to do some hand building after throwing on the wheel. I tried to follow my design as much as possible. It turned out great and I was using using it however it broke when I moved apartments.",
         "processImages": [
             "images/process/soapHolder-1.jpeg",
             "images/process/soapHolder-2.jpeg",
