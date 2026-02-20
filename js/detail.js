@@ -39,6 +39,7 @@ function showPieceDetail(pieceId) {
     navLinks.forEach(l => l.classList.remove('active'));
 
     document.getElementById('detail').classList.add('active');
+    window.scrollTo(0, 0);
 }
 
 // Back to gallery function

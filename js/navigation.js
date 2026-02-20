@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 targetLink.classList.add('active');
             }
 
-            // Restore gallery scroll position when going back to gallery
+            // Restore gallery scroll position when going back from detail, otherwise scroll to top
             if (pageName === 'gallery') {
                 const savedScrollY = sessionStorage.getItem('galleryScrollY');
                 if (savedScrollY !== null) {
@@ -60,7 +60,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     requestAnimationFrame(() => {
                         window.scrollTo(0, parseInt(savedScrollY));
                     });
+                } else {
+                    window.scrollTo(0, 0);
                 }
+            } else {
+                window.scrollTo(0, 0);
             }
         }
     }
