@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 // Error from server
                 formStatus.className = 'form-status error';
-                formStatus.textContent = result.error || 'Something went wrong. Please try again or email me directly at katmelonashi@gmail.com';
+                formStatus.textContent = result.error || 'Something went wrong. Please try again or email me directly at kathmelonashi@gmail.com';
             }
         } catch (error) {
             // Network or other error
             formStatus.className = 'form-status error';
-            formStatus.textContent = 'Unable to send message. Please email me directly at katmelonashi@gmail.com';
+            formStatus.textContent = 'Unable to send message. Please email me directly at kathmelonashi@gmail.com';
             console.error('Error:', error);
         } finally {
             // Re-enable submit button

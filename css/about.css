@@ -38,6 +38,79 @@
     opacity: 0.8;
 }
 
+/* Instagram Link */
+.instagram-link {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 20px 24px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(139, 109, 91, 0.3);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--earth-brown);
+    transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: var(--earth-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139, 109, 91, 0.15);
+}
+
+.instagram-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    color: var(--earth-brown);
+}
+
+.instagram-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.instagram-label {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.instagram-handle {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+/* Divider */
+.contact-divider {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--earth-brown);
+    opacity: 0.6;
+}
+
+.contact-divider::before,
+.contact-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(139, 109, 91, 0.3);
+}
+
+.contact-divider span {
+    font-family: 'Crimson Text', serif;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
 /* Contact Form */
 .contact-form {
     max-width: 600px;

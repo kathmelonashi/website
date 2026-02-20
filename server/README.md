@@ -1,6 +1,6 @@
 # Pottery Studio Website - Server Setup Guide
 
-This server handles contact form submissions and sends emails to katmelonashi@gmail.com.
+This server handles contact form submissions and sends emails to kathmelonashi@gmail.com.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ To use Gmail for sending emails, you need to create an **App Password**:
 
 ### Step 3: Update .env File
 ```env
-EMAIL_USER=katmelonashi@gmail.com
+EMAIL_USER=kathmelonashi@gmail.com
 EMAIL_PASSWORD=your-16-character-app-password
 PORT=3000
 ```
@@ -72,7 +72,7 @@ The server will run on `http://localhost:3000`
 3. Navigate to the "About Me" page
 4. Fill out the contact form
 5. Submit the form
-6. Check your email at katmelonashi@gmail.com
+6. Check your email at kathmelonashi@gmail.com
 
 ## API Endpoints
 
@@ -156,4 +156,4 @@ When ready to deploy to production:
 
 ## Support
 
-For issues or questions, contact: katmelonashi@gmail.com
+For issues or questions, contact: kathmelonashi@gmail.com

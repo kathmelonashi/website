@@ -80,17 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Check if it's an order confirmation page (e.g., #order-confirmation/ORD-123)
-        if (hash.startsWith('order-confirmation')) {
-            const orderId = hash.split('/')[1];
-            if (orderId && typeof showOrderConfirmation === 'function') {
-                showOrderConfirmation(orderId);
-            } else {
-                showPage('order-confirmation');
-            }
-            return;
-        }
-
         // Default to home if no hash or invalid hash
         if (!hash || !document.getElementById(hash)) {
             hash = 'home';
@@ -104,33 +93,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Load the correct page on initial load
     handleHashChange();
-
-    // Cart badge functionality
-    const cartBadge = document.getElementById('cart-badge');
-
-    function updateCartBadge(count) {
-        if (cartBadge) {
-            if (count > 0) {
-                cartBadge.textContent = count;
-                cartBadge.classList.remove('hidden');
-                cartBadge.classList.add('pulse');
-                setTimeout(() => cartBadge.classList.remove('pulse'), 300);
-            } else {
-                cartBadge.classList.add('hidden');
-            }
-        }
-    }
-
-    // Listen for cart update events
-    window.addEventListener('cart-updated', (e) => {
-        updateCartBadge(e.detail.itemCount);
-    });
-
-    window.addEventListener('cart-cleared', () => {
-        updateCartBadge(0);
-    });
-
-    window.addEventListener('cart-loaded', (e) => {
-        updateCartBadge(e.detail.itemCount);
-    });
 });

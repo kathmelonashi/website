@@ -106,7 +106,7 @@ The script automatically:
 
 ## Contact Form Setup
 
-The website includes a contact form on the About Me page that sends emails to **katmelonashi@gmail.com**.
+The website includes a contact form on the About Me page that sends emails to **kathmelonashi@gmail.com**.
 
 ### Quick Start
 
