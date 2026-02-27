@@ -62,9 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Force video play (mobile browsers block autoplay silently)
     function tryPlayVideo() {
         const video = document.querySelector('.pottery-image video');
-        if (video && video.paused) {
-            video.play().catch(() => {});
-        }
+        if (!video) return;
+        video.muted = true;
+        video.load();
+        video.play().catch(() => {
+            video.addEventListener('canplay', () => video.play().catch(() => {}), { once: true });
+        });
     }
 
     // Function to show a specific page
