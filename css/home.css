@@ -100,8 +100,13 @@
     }
 
     .pottery-image video {
-        max-height: 44vh;
-        width: auto;
+        width: min(44vh, 90%);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center 80%;
+        border-radius: 50%;
+        -webkit-mask-image: radial-gradient(circle, black 35%, transparent 70%);
+        mask-image: radial-gradient(circle, black 35%, transparent 70%);
     }
 
     .main-title {
