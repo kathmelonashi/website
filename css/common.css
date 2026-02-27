@@ -52,7 +52,6 @@ body {
     font-size: 16px;
     color: var(--clay-dark);
     text-decoration: none;
-    position: relative;
     transition: color 0.3s ease;
 }
 
@@ -64,20 +63,6 @@ body {
     color: var(--terracotta);
 }
 
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--terracotta);
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
 
 .nav-sep {
     font-family: 'Playfair Display', serif;
