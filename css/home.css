@@ -25,10 +25,12 @@
 
 .pottery-image video {
     width: 100%;
-    aspect-ratio: 1 / 1.4;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: center 30%;
-    clip-path: url(#vase-clip);
+    object-position: center 80%;
+    border-radius: 50%;
+    -webkit-mask-image: radial-gradient(circle, black 35%, transparent 70%);
+    mask-image: radial-gradient(circle, black 35%, transparent 70%);
 }
 
 .home-content {
@@ -92,11 +94,14 @@
         align-items: start;
     }
 
+    .pottery-image {
+        display: flex;
+        justify-content: center;
+    }
+
     .pottery-image video {
         max-height: 44vh;
         width: auto;
-        margin: 0 auto;
-        display: block;
     }
 
     .main-title {
