@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
+            subject: 'Message from website',
             message: document.getElementById('message').value
         };
 
