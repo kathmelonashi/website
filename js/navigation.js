@@ -35,6 +35,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Update nav: hide the current page's link and insert | separators between visible links
+    function updateNav(activePage) {
+        // Remove old separators
+        navMenu.querySelectorAll('.nav-sep').forEach(s => s.remove());
+
+        // Toggle nav-current on links
+        navLinks.forEach(l => {
+            if (l.getAttribute('data-page') === activePage) {
+                l.classList.add('nav-current');
+            } else {
+                l.classList.remove('nav-current');
+            }
+        });
+
+        // Insert | separators between visible links
+        const visibleLinks = Array.from(navLinks).filter(l => !l.classList.contains('nav-current'));
+        for (let i = 1; i < visibleLinks.length; i++) {
+            const sep = document.createElement('span');
+            sep.className = 'nav-sep';
+            sep.textContent = '|';
+            navMenu.insertBefore(sep, visibleLinks[i]);
+        }
+    }
+
     // Function to show a specific page
     function showPage(pageName) {
         // Remove active class from all links and pages
@@ -46,11 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (targetPage) {
             targetPage.classList.add('active');
 
-            // Update nav link active state
+            // Update nav link active state and separators
             const targetLink = document.querySelector(`[data-page="${pageName}"]`);
             if (targetLink) {
                 targetLink.classList.add('active');
             }
+            updateNav(pageName);
 
             // Restore gallery scroll position when going back from detail, otherwise scroll to top
             if (pageName === 'gallery') {
