@@ -59,6 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // Force video play (mobile browsers block autoplay silently)
+    function tryPlayVideo() {
+        const video = document.querySelector('.pottery-image video');
+        if (video && video.paused) {
+            video.play().catch(() => {});
+        }
+    }
+
     // Function to show a specific page
     function showPage(pageName) {
         // Remove active class from all links and pages
@@ -76,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 targetLink.classList.add('active');
             }
             updateNav(pageName);
+
+            if (pageName === 'home') tryPlayVideo();
 
             // Restore gallery scroll position when going back from detail, otherwise scroll to top
             if (pageName === 'gallery') {
