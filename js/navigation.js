@@ -1,6 +1,6 @@
 // Navigation functionality with URL hash routing
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.nav-link');
     const pages = document.querySelectorAll('.page');
     const navMenu = document.querySelector('.nav-menu');
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add scroll event listener with throttling for better performance
     let scrollTimeout;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (scrollTimeout) {
             window.cancelAnimationFrame(scrollTimeout);
         }
-        scrollTimeout = window.requestAnimationFrame(function() {
+        scrollTimeout = window.requestAnimationFrame(function () {
             handleScroll();
         });
     });
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         video.muted = true;
         video.load();
         video.play().catch(() => {
-            video.addEventListener('canplay', () => video.play().catch(() => {}), { once: true });
+            video.addEventListener('canplay', () => video.play().catch(() => { }), { once: true });
         });
     }
 
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle navigation link clicks
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             // Get the target page
@@ -129,6 +129,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const pieceId = hash.split('/')[1];
             if (pieceId && typeof showPieceDetail === 'function') {
                 showPieceDetail(pieceId);
+                // The detail view is a subpage of gallery, so apply the gallery nav state
+                // This ensures "Home | Contact" format is maintained on refresh
+                updateNav('gallery');
             }
             return;
         }

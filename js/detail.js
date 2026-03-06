@@ -21,14 +21,21 @@ function showPieceDetail(pieceId) {
 
     // Add process images
     const processContainer = document.getElementById('process-images');
+    const processSection = document.querySelector('.detail-process');
     processContainer.innerHTML = '';
-    piece.processImages.forEach((imgSrc, index) => {
-        const processImg = document.createElement('div');
-        processImg.className = 'process-image';
-        processImg.innerHTML = `<img src="${imgSrc}" alt="Making process" />`;
-        processImg.addEventListener('click', () => openLightbox(piece.processImages, index));
-        processContainer.appendChild(processImg);
-    });
+
+    if (piece.processImages && piece.processImages.length > 0) {
+        processSection.style.display = 'block';
+        piece.processImages.forEach((imgSrc, index) => {
+            const processImg = document.createElement('div');
+            processImg.className = 'process-image';
+            processImg.innerHTML = `<img src="${imgSrc}" alt="Making process" />`;
+            processImg.addEventListener('click', () => openLightbox(piece.processImages, index));
+            processContainer.appendChild(processImg);
+        });
+    } else {
+        processSection.style.display = 'none';
+    }
 
     // Switch to detail page
     const pages = document.querySelectorAll('.page');
