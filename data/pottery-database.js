@@ -25,12 +25,13 @@ const potteryDatabase = [
         "id": 1,
         "title": "Lemon Squizer",
         "image": "images/pottery/lemonSquizer.jpeg",
-        "story": "No story",
+        "story": "I’m officially in my kitchen utensils era, and this is the first piece of my collection. Honestly, I am not even using it as a lemon squeezer—it’s currently living its best life as a statement piece in my bar corner.",
         "processImages": [
             "images/process/lemonSquizer-1.jpeg",
             "images/process/lemonSquizer-2.jpeg",
             "images/process/lemonSquizer-3.jpeg",
-            "images/process/lemonSquizer-4.jpeg"
+            "images/process/lemonSquizer-4.jpeg",
+            "images/process/lemonSquizer-5.jpeg"
         ]
     },
     {

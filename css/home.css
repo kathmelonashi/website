@@ -28,6 +28,7 @@
     aspect-ratio: 1 / 1.4;
     object-fit: cover;
     object-position: center 30%;
+    -webkit-clip-path: url(#vase-clip);
     clip-path: url(#vase-clip);
 }
 
