@@ -286,7 +286,7 @@ const potteryDatabase = [
     {
         "id": 24,
         "title": "Square Handle Mug",
-        "image": "images/pottery/squareHandle.jpeg",
+        "image": "images/pottery/SquareHandle.jpeg",
         "story": "",
         "processImages": [
             "images/process/squareHandleMug-1.jpeg"
