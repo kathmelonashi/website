@@ -3,16 +3,29 @@
 #home {
     overflow: hidden;
     height: 100vh;
+    padding: 0;
+    /* Override generic .page padding to allow edge flush */
 }
 
 .home-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: auto 1fr;
+    gap: 8vw;
     align-items: center;
     min-height: calc(100vh - 120px);
+    padding-right: 5vw;
+}
+
+.pottery-image {
+    position: relative;
+    height: 70vh;
+    max-height: 800px;
+    width: auto;
+    aspect-ratio: 0.5 / 1.4;
+    overflow: hidden;
 }
 
 .pottery-image img {
@@ -24,8 +37,11 @@
 }
 
 .pottery-image video {
-    width: 100%;
-    aspect-ratio: 1 / 1.4;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
     object-fit: cover;
     object-position: center 30%;
     -webkit-clip-path: url(#vase-clip);
@@ -84,20 +100,23 @@
     }
 
     .home-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
+        grid-template-columns: 45vw 1fr;
         gap: 16px;
-        padding: 0 20px 20px;
+        padding: 0 20px 20px 0;
         min-height: unset;
         height: calc(100vh - 60px);
-        align-items: start;
+        align-items: center;
+    }
+
+    .pottery-image {
+        height: auto;
+        max-height: none;
+        width: 100%;
+        max-width: none;
     }
 
     .pottery-image video {
-        max-height: 44vh;
-        width: auto;
-        margin: 0 auto;
-        display: block;
+        max-height: none;
     }
 
     .main-title {
