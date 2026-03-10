@@ -6,7 +6,7 @@ const potteryDatabase = [
         "id": 0,
         "title": "Clock",
         "image": "images/pottery/clock.jpeg",
-        "story": "This was my first slip-casting mold that I made. I found this metal plate at a vintage store in my neighborhood. Originally, I planned to turn to make a plate set using it, but when the first mold came out, it just felt like it wanted to be a clock.",
+        "story": "This was the first slip-casting mold I ever made. I found this metal plate at a vintage shop in my neighborhood. At first, I was planning to use it to make a set of plates, but when the first mold came out, it just felt like it wanted to be a clock.",
         "processImages": [
             "images/process/clock-1.jpeg",
             "images/process/clock-2.jpeg",
