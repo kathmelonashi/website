@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            subject: 'Message from website',
+            subject: 'KATHCERAMICS WEBSITE MESSAGE',
             message: document.getElementById('message').value
         };
 
