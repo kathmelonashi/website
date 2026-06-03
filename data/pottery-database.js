@@ -84,17 +84,17 @@ const potteryDatabase = [
     {
         "id": 9,
         "title": "Aerated Vase",
-        "image": "images/process/aeratedVase-2.jpeg",
+        "image": "images/process/AeratedVase-2.jpeg",
         "story": "",
         "processImages": [
-            "images/process/aeratedVase-1.jpeg",
-            "images/process/aeratedVase-2.jpeg"
+            "images/process/AeratedVase-1.jpeg",
+            "images/process/AeratedVase-2.jpeg"
         ]
     },
     {
         "id": 10,
         "title": "Small Jar",
-        "image": "images/pottery/smallJar.jpeg",
+        "image": "images/pottery/SmallJar.jpeg",
         "story": "",
         "processImages": []
     },
