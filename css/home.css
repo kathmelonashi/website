@@ -1,141 +1,209 @@
-/* Home Page Styles */
+/* Home Page — wabi-sabi */
 
 #home {
+    /* neutral, earthen palette with a single persimmon accent */
+    --home-paper: #f4f1ea;
+    --home-ink: #44403a;
+    --home-stone: #8e8478;
+    --home-accent: #b3552f;
+
+    position: relative;
     overflow: hidden;
     height: 100vh;
+    height: 100svh;
     padding: 0;
-    /* Override generic .page padding to allow edge flush */
+    background:
+        radial-gradient(120% 90% at 12% 8%, rgba(142, 132, 120, 0.08), transparent 60%),
+        radial-gradient(90% 80% at 90% 95%, rgba(179, 85, 47, 0.05), transparent 55%),
+        var(--home-paper);
+}
+
+/* oval vignette — corners fade so the composition sits in a soft pool of light */
+@media (min-width: 769px) {
+    #home::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(ellipse 72% 68% at 50% 48%,
+                transparent 55%,
+                rgba(142, 132, 120, 0.10) 78%,
+                rgba(120, 108, 94, 0.22) 94%,
+                rgba(104, 93, 80, 0.30) 100%);
+    }
 }
 
 .home-container {
-    width: 100%;
-    max-width: none;
-    margin: 0;
+    height: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 6vw;
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 8vw;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(40px, 7vw, 96px);
     align-items: center;
-    min-height: calc(100vh - 120px);
-    padding-right: 5vw;
 }
+
+/* — the vessel — */
 
 .pottery-image {
     position: relative;
-    height: 70vh;
-    max-height: 800px;
-    width: auto;
-    aspect-ratio: 0.5 / 1.4;
-    overflow: hidden;
+    width: 100%;
+    max-width: 420px;
+    aspect-ratio: 4 / 5;
+    justify-self: end;
 }
 
-.pottery-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 2px;
-    box-shadow: 0 8px 30px rgba(107, 68, 35, 0.15);
-    object-fit: cover;
+/* offset earthen shadow — deliberately not quite behind the vessel */
+.pottery-image::before {
+    content: '';
+    position: absolute;
+    inset: 5% -4% -4% 6%;
+    background: rgba(142, 132, 120, 0.18);
+    border-radius: 62% 38% 54% 46% / 44% 58% 42% 56%;
 }
 
 .pottery-image video {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
+    position: relative;
+    width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
     object-position: center 30%;
-    -webkit-clip-path: url(#vase-clip);
-    clip-path: url(#vase-clip);
+    border-radius: 58% 42% 56% 44% / 48% 52% 46% 54%;
 }
+
+/* — the words — */
 
 .home-content {
     position: relative;
-    padding: 20px;
+    padding: 0;
+}
+
+.home-content > *:not(.enso) {
+    position: relative;
+    z-index: 1;
+}
+
+.enso {
+    position: absolute;
+    z-index: 0;
+    top: clamp(-70px, -5vw, -40px);
+    left: -48px;
+    width: clamp(120px, 13vw, 170px);
+    color: var(--home-accent);
+    opacity: 0.16;
+    transform: rotate(-12deg);
+    pointer-events: none;
+}
+
+.home-eyebrow {
+    font-family: 'Fraunces', 'Crimson Text', serif;
+    font-variation-settings: "SOFT" 0, "WONK" 1;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--home-stone);
+    margin-bottom: 22px;
 }
 
 .main-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 52px;
-    font-weight: 400;
-    color: var(--clay-dark);
-    line-height: 1.2;
-    margin-bottom: 30px;
+    font-family: 'Fraunces', 'Playfair Display', serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 0, "WONK" 1;
+    font-size: clamp(38px, 4.6vw, 58px);
+    font-weight: 380;
+    color: var(--home-ink);
+    line-height: 1.22;
     letter-spacing: -0.5px;
+    margin-bottom: 26px;
+    transform: rotate(-0.6deg);
 }
-
 .home-message {
-    font-size: 20px;
-    color: var(--earth-brown);
+    font-size: 19px;
+    color: var(--home-stone);
     line-height: 1.8;
-    font-weight: 400;
+    max-width: 38ch;
 }
 
 .gallery-button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 35px;
-    font-size: 18px;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 0 2px 6px;
     font-family: 'Crimson Text', serif;
+    font-size: 19px;
     font-weight: 600;
-    color: var(--clay-dark);
-    background-color: transparent;
-    border: 2px solid var(--clay-dark);
-    border-radius: 2px;
+    letter-spacing: 0.04em;
+    color: var(--home-ink);
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--home-accent);
+    border-radius: 0;
     cursor: pointer;
-    transition: all 0.3s ease;
-    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.gallery-button .arrow {
+    display: inline-block;
+    color: var(--home-accent);
+    transition: transform 0.3s ease;
 }
 
 .gallery-button:hover {
-    background-color: var(--clay-dark);
-    color: var(--soft-cream);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(107, 68, 35, 0.2);
+    color: var(--home-accent);
+}
+
+.gallery-button:hover .arrow {
+    transform: translateX(6px);
 }
 
 /* Responsive Home Page */
 @media (max-width: 768px) {
-    #home {
-        padding: 60px 0 0;
-    }
-
     .home-container {
-        grid-template-columns: 45vw 1fr;
-        gap: 16px;
-        padding: 0 20px 20px 0;
-        min-height: unset;
-        height: calc(100vh - 60px);
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-content: center;
+        gap: 30px;
+        padding: 72px 28px 32px;
+        text-align: center;
     }
 
     .pottery-image {
-        height: auto;
-        max-height: none;
-        width: 100%;
+        /* keep the vessel + text inside one screen: cap by height too */
+        width: min(62vw, 36svh);
         max-width: none;
+        justify-self: center;
     }
 
-    .pottery-image video {
-        max-height: none;
+    .enso {
+        top: -34px;
+        left: 50%;
+        margin-left: -90px;
+        width: 104px;
+    }
+
+    .home-eyebrow {
+        font-size: 11px;
+        margin-bottom: 14px;
     }
 
     .main-title {
-        font-size: 32px;
-        margin-bottom: 12px;
+        font-size: clamp(30px, 8.5vw, 38px);
+        margin-bottom: 14px;
     }
 
     .home-message {
         font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .home-content {
-        padding: 0;
+        line-height: 1.7;
+        max-width: 32ch;
+        margin: 0 auto;
     }
 
     .gallery-button {
-        margin-top: 14px;
-        padding: 10px 24px;
-        font-size: 16px;
+        margin-top: 22px;
+        font-size: 17px;
     }
 }

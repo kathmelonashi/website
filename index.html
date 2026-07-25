@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0,1;1,9..144,300..600,0,1&display=swap"
+        rel="stylesheet">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/common.css">
@@ -29,31 +32,6 @@
 </head>
 
 <body>
-    <!-- SVG Vase Clip Path -->
-    <svg width="0" height="0" style="position:absolute">
-        <defs>
-            <clipPath id="vase-clip" clipPathUnits="objectBoundingBox">
-                <path d="
-                    M 0.392,0.05  L 0.608,0.05
-                    C 0.662,0.05 0.698,0.068 0.680,0.086
-                    C 0.644,0.104 0.617,0.122 0.608,0.158
-                    C 0.599,0.194 0.608,0.230 0.635,0.275
-                    C 0.725,0.338 0.860,0.428 0.905,0.545
-                    C 0.950,0.662 0.905,0.770 0.815,0.842
-                    C 0.752,0.896 0.680,0.923 0.635,0.932
-                    L 0.365,0.932
-                    C 0.320,0.923 0.248,0.896 0.185,0.842
-                    C 0.095,0.770 0.050,0.662 0.095,0.545
-                    C 0.140,0.428 0.275,0.338 0.365,0.275
-                    C 0.392,0.230 0.401,0.194 0.392,0.158
-                    C 0.383,0.122 0.356,0.104 0.320,0.086
-                    C 0.302,0.068 0.338,0.05 0.392,0.05
-                    Z
-                " />
-            </clipPath>
-        </defs>
-    </svg>
-
     <!-- Navigation -->
     <nav class="nav-menu">
         <a href="#" class="nav-link active" data-page="home">Home</a>
@@ -71,10 +49,15 @@
                 </video>
             </div>
             <div class="home-content">
-                <h1 class="main-title">A little crooked, fully handmade</h1>
-                <p class="home-message">Wanna see more?</p>
+                <svg class="enso" viewBox="0 0 100 100" aria-hidden="true">
+                    <path d="M 63 11 A 41 41 0 1 1 27 14" fill="none" stroke="currentColor" stroke-width="4"
+                        stroke-linecap="round" />
+                </svg>
+                <p class="home-eyebrow">kath ceramics</p>
+                <h1 class="main-title">A little crooked,<br>fully handmade</h1>
+                <p class="home-message">Quiet pieces shaped by hand — each one keeps the small marks of its making.</p>
                 <button class="gallery-button" onclick="document.querySelector('[data-page=\'gallery\']').click()">
-                    Gallery →
+                    Wanna see more? <span class="arrow" aria-hidden="true">⟶</span>
                 </button>
             </div>
         </div>
