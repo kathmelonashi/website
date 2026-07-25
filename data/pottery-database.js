@@ -24,7 +24,7 @@ const potteryDatabase = [
     {
         "id": 2,
         "title": "Honeycomb Vase",
-        "image": "images/pottery/honeyCombVase.jpeg",
+        "image": "images/pottery/honeycombVase.jpeg",
         "story": "",
         "processImages": [
             "images/process/honeyCombVase.jpeg"
