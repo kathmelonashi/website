@@ -5,38 +5,88 @@
     margin: 0 auto;
 }
 
+/* Columns of stacked pieces — gallery.js deals items in left-to-right */
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
     margin-bottom: 60px;
+}
+
+.gallery-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: 2px;
-    box-shadow: 0 4px 15px rgba(107, 68, 35, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(107, 68, 35, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-radius 0.6s ease;
     cursor: pointer;
 }
 
+/* Hovered pieces straighten up and settle into a rounder pebble */
 .gallery-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(107, 68, 35, 0.2);
+    transform: translateY(-6px) rotate(0deg) !important;
+    box-shadow: 0 10px 28px rgba(107, 68, 35, 0.22);
+    border-radius: 46% 54% 50% 50% / 54% 46% 54% 46%;
 }
 
 .gallery-item img {
     width: 100%;
-    aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .gallery-item:hover img {
     transform: scale(1.05);
 }
+
+/* Varied proportions — tall, square, squat — so no two neighbors match */
+.gallery-item.ratio-1 img { aspect-ratio: 4 / 5; }
+.gallery-item.ratio-2 img { aspect-ratio: 1 / 1; }
+.gallery-item.ratio-3 img { aspect-ratio: 3 / 4; }
+.gallery-item.ratio-4 img { aspect-ratio: 5 / 6; }
+.gallery-item.ratio-5 img { aspect-ratio: 10 / 9; }
+
+/* Hand-thrown silhouettes — pebbles, kiln arches, wobbly slabs */
+.gallery-item.shape-1 {
+    border-radius: 58% 42% 52% 48% / 46% 54% 46% 54%;
+}
+
+.gallery-item.shape-2 {
+    /* arch — domed top, grounded bottom, like a kiln door */
+    border-radius: 48% 52% 20px 24px / 38% 42% 20px 24px;
+}
+
+.gallery-item.shape-3 {
+    border-radius: 28px 70px 34px 62px / 62px 30px 66px 28px;
+}
+
+.gallery-item.shape-4 {
+    /* egg */
+    border-radius: 50% 50% 46% 54% / 56% 58% 42% 44%;
+}
+
+.gallery-item.shape-5 {
+    /* leaf */
+    border-radius: 74px 22px 74px 22px / 22px 74px 22px 74px;
+}
+
+.gallery-item.shape-6 {
+    border-radius: 36% 64% 58% 42% / 48% 38% 62% 52%;
+}
+
+/* A little crooked, on purpose */
+.gallery-item.tilt-1 { transform: rotate(-1.2deg); }
+.gallery-item.tilt-2 { transform: rotate(0.9deg); }
+.gallery-item.tilt-3 { transform: rotate(-0.5deg); }
+.gallery-item.tilt-4 { transform: rotate(1.3deg); }
 
 .gallery-item-overlay {
     position: absolute;
@@ -66,8 +116,11 @@
 /* Responsive Gallery */
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 14px;
+    }
+
+    .gallery-column {
+        gap: 16px;
     }
 
     .gallery-item-overlay span {
