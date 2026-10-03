@@ -35,11 +35,15 @@ const potteryDatabase = [
     {
         "id": 3,
         "title": "Giant Planter",
-        "image": "images/process/giantPlanter-2.jpeg",
+        "image": "images/process/giantPlanter-7.jpeg",
         "story": "",
         "processImages": [
-            "images/process/giantPlanter-1.jpeg",
-            "images/process/giantPlanter-2.jpeg"
+            "images/process/giantPlanter-3.jpeg",
+            "images/process/giantPlanter-4.jpeg",
+            "images/process/giantPlanter-5.jpeg",
+            "images/process/giantPlanter-6.jpeg",
+            "images/process/giantPlanter-7.jpeg",
+            "images/process/giantPlanter-8.jpeg"
         ]
     },
     {
@@ -115,6 +119,7 @@ const potteryDatabase = [
         "story": "",
         "processImages": [
             "images/process/soySauceHolders-1.jpeg",
+            "images/process/soySauceHolders-3.jpeg",
             "images/process/soySauceHolders-2.jpeg"
         ]
     },
@@ -148,6 +153,8 @@ const potteryDatabase = [
         "image": "images/pottery/honeyJar1.jpeg",
         "story": "",
         "processImages": [
+            "images/process/honeyJar-2.jpeg",
+            "images/process/honeyJar-3.jpeg",
             "images/process/honeyJar-1.jpeg",
             "images/pottery/honeyJar.jpeg"
         ]
@@ -159,7 +166,8 @@ const potteryDatabase = [
         "story": "",
         "processImages": [
             "images/process/flowerVase-0.jpeg",
-            "images/process/flowerVase-1.jpeg"
+            "images/process/flowerVase-1.jpeg",
+            "images/process/flowerVase-2.jpeg"
         ]
     },
     {
@@ -327,7 +335,8 @@ const potteryDatabase = [
         "story": "",
         "processImages": [
             "images/process/homeClock-1.jpeg",
-            "images/process/homeClock-2.jpeg"
+            "images/process/homeClock-2.jpeg",
+            "images/process/homeClock-3.jpeg"
         ]
     },
     {
