@@ -111,6 +111,27 @@
     white-space: nowrap;
 }
 
+/* Direct email, sits just above the form */
+.contact-email {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    font-family: 'Crimson Text', serif;
+    font-size: 17px;
+    color: var(--earth-brown);
+}
+
+.contact-email a {
+    color: var(--clay-dark);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(107, 68, 35, 0.35);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: var(--terracotta);
+    border-color: var(--terracotta);
+}
+
 /* Contact Form */
 .contact-form {
     max-width: 600px;

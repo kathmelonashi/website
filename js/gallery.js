@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         potteryDatabase.forEach((piece, index) => {
             const item = document.createElement('div');
             // Variant classes cycle at different lengths (6/5/4) so
-            // shape + proportion + tilt combos rarely repeat
-            item.className = `gallery-item shape-${index % 6 + 1} ratio-${index % 5 + 1} tilt-${index % 4 + 1}`;
+            item.className = 'gallery-item';
             item.setAttribute('data-piece', piece.id);
             item.innerHTML = `
                 <img src="${piece.image}" alt="${piece.title}" />

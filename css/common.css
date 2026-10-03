@@ -70,14 +70,31 @@ body::after {
 /* Navigation Menu - Top Center */
 .nav-menu {
     position: fixed;
-    top: 30px;
+    top: 24px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
     gap: 0;
     z-index: 100;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* At the top of a page the nav blends into the background. Once you
+       scroll it floats over content, so it picks up a frosted pill (see
+       .nav-floating, toggled by navigation.js) to stay legible over photos. */
+    padding: 10px 24px;
+    background: rgba(245, 241, 232, 0);
+    border: 1px solid rgba(107, 68, 35, 0);
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(107, 68, 35, 0);
+    transition: transform 0.3s ease, opacity 0.3s ease,
+        background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.nav-menu.nav-floating {
+    background: rgba(245, 241, 232, 0.88);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-color: rgba(107, 68, 35, 0.10);
+    box-shadow: 0 6px 20px rgba(107, 68, 35, 0.14);
 }
 
 .nav-menu.nav-hidden {
@@ -94,12 +111,15 @@ body::after {
     transition: color 0.3s ease;
 }
 
-.nav-link.nav-current {
-    display: none;
-}
-
 .nav-link:hover {
     color: var(--terracotta);
+}
+
+/* The page you're on: accent color with a small underline */
+.nav-link.active {
+    color: var(--terracotta);
+    border-bottom: 1px solid var(--terracotta);
+    padding-bottom: 2px;
 }
 
 
@@ -145,7 +165,8 @@ body::after {
 /* Responsive Navigation */
 @media (max-width: 768px) {
     .nav-menu {
-        top: 20px;
+        top: 16px;
+        padding: 8px 18px;
     }
 
     .nav-link {

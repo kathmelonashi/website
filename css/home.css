@@ -1,6 +1,7 @@
 /* Home Page — wabi-sabi */
 
 #home {
+    /* hero section at the top of the gallery page */
     /* neutral, earthen palette with a single persimmon accent */
     --home-paper: #f4f1ea;
     --home-ink: #44403a;
@@ -9,32 +10,16 @@
 
     position: relative;
     overflow: hidden;
-    height: 100vh;
-    height: 100svh;
-    padding: 0;
-    background:
-        radial-gradient(120% 90% at 12% 8%, rgba(142, 132, 120, 0.08), transparent 60%),
-        radial-gradient(90% 80% at 90% 95%, rgba(179, 85, 47, 0.05), transparent 55%),
-        var(--home-paper);
-}
-
-/* oval vignette — corners fade so the composition sits in a soft pool of light */
-@media (min-width: 769px) {
-    #home::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        background: radial-gradient(ellipse 72% 68% at 50% 48%,
-                transparent 55%,
-                rgba(142, 132, 120, 0.10) 78%,
-                rgba(120, 108, 94, 0.22) 94%,
-                rgba(104, 93, 80, 0.30) 100%);
-    }
+    /* sized to its content, not the screen, so the gallery heading and the
+       first row of pieces peek in on first load */
+    padding: 110px 0 36px;
+    /* deliberately no background and no vignette: the hero sits directly on
+       the page's glaze washes, so it reads as the top of one long page rather
+       than a separate screen stacked on the gallery */
+    background: none;
 }
 
 .home-container {
-    height: 100%;
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 6vw;
@@ -49,7 +34,7 @@
 .pottery-image {
     position: relative;
     width: 100%;
-    max-width: 420px;
+    max-width: 360px;
     aspect-ratio: 4 / 5;
     justify-self: end;
 }
@@ -78,23 +63,6 @@
 .home-content {
     position: relative;
     padding: 0;
-}
-
-.home-content > *:not(.enso) {
-    position: relative;
-    z-index: 1;
-}
-
-.enso {
-    position: absolute;
-    z-index: 0;
-    top: clamp(-70px, -5vw, -40px);
-    left: -48px;
-    width: clamp(120px, 13vw, 170px);
-    color: var(--home-accent);
-    opacity: 0.16;
-    transform: rotate(-12deg);
-    pointer-events: none;
 }
 
 .home-eyebrow {
@@ -126,63 +94,26 @@
     max-width: 38ch;
 }
 
-.gallery-button {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 10px;
-    margin-top: 40px;
-    padding: 0 2px 6px;
-    font-family: 'Crimson Text', serif;
-    font-size: 19px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    color: var(--home-ink);
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--home-accent);
-    border-radius: 0;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.gallery-button .arrow {
-    display: inline-block;
-    color: var(--home-accent);
-    transition: transform 0.3s ease;
-}
-
-.gallery-button:hover {
-    color: var(--home-accent);
-}
-
-.gallery-button:hover .arrow {
-    transform: translateX(6px);
-}
-
 /* Responsive Home Page */
 @media (max-width: 768px) {
+    #home {
+        padding: 84px 0 28px;
+    }
+
     .home-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         justify-items: center;
-        align-content: center;
-        gap: 30px;
-        padding: 72px 28px 32px;
+        gap: 24px;
+        padding: 0 28px;
         text-align: center;
     }
 
     .pottery-image {
-        /* keep the vessel + text inside one screen: cap by height too */
-        width: min(62vw, 36svh);
+        /* small enough that the gallery heading shows below on a phone */
+        width: min(56vw, 30svh);
         max-width: none;
         justify-self: center;
-    }
-
-    .enso {
-        top: -34px;
-        left: 50%;
-        margin-left: -90px;
-        width: 104px;
     }
 
     .home-eyebrow {
@@ -200,10 +131,5 @@
         line-height: 1.7;
         max-width: 32ch;
         margin: 0 auto;
-    }
-
-    .gallery-button {
-        margin-top: 22px;
-        font-size: 17px;
     }
 }
