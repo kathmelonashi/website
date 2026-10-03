@@ -221,12 +221,13 @@ const potteryDatabase = [
     },
     {
         "id": 20,
-        "title": "Vase With a Belly",
-        "image": "images/pottery/vaseWithABelly.jpeg",
+        "title": "Pencil Holder",
+        "image": "images/pottery/pencilHolder.jpeg",
         "story": "",
         "processImages": [
             "images/process/vaseWithABelly-0.jpeg",
-            "images/process/vaseWithABelly-1.jpeg"
+            "images/process/vaseWithABelly-1.jpeg",
+            "images/pottery/vaseWithABelly.jpeg"
         ]
     },
     {
