@@ -24,7 +24,7 @@ const potteryDatabase = [
     },
     {
         "id": 2,
-        "title": "Small Plates",
+        "title": "Patterned Small Plates",
         "image": "images/process/patternSmallPlates-2.jpeg",
         "story": "",
         "processImages": [
@@ -48,7 +48,7 @@ const potteryDatabase = [
     },
     {
         "id": 4,
-        "title": "Blue Flowers Plate",
+        "title": "Blue Flower Plate",
         "image": "images/process/blueFlowersPlate-2.jpeg",
         "story": "",
         "processImages": [
@@ -137,7 +137,7 @@ const potteryDatabase = [
     },
     {
         "id": 12,
-        "title": "Black And White Swirl Cup",
+        "title": "Black and White Swirl Cup",
         "image": "images/pottery/blackAndWhiteSwirlCup.jpeg",
         "story": "",
         "processImages": [
@@ -190,7 +190,7 @@ const potteryDatabase = [
     },
     {
         "id": 17,
-        "title": "Watermelon Seed Looking Bowl Looking Thing",
+        "title": "Watermelon Seed Bowl",
         "image": "images/process/watermelonSeed-2.jpeg",
         "story": "",
         "processImages": [
@@ -211,7 +211,7 @@ const potteryDatabase = [
     },
     {
         "id": 19,
-        "title": "3 Belly Vase",
+        "title": "Three-Belly Vase",
         "image": "images/pottery/3bellyVase.jpeg",
         "story": "",
         "processImages": [
@@ -262,7 +262,7 @@ const potteryDatabase = [
     },
     {
         "id": 24,
-        "title": "Candles",
+        "title": "Candles II",
         "image": "images/pottery/candles-3.jpeg",
         "story": "",
         "processImages": [
@@ -361,7 +361,7 @@ const potteryDatabase = [
     },
     {
         "id": 34,
-        "title": "Flores Mug",
+        "title": "Flores Mug II",
         "image": "images/process/floresMug-0.jpeg",
         "story": "",
         "processImages": [
@@ -454,9 +454,9 @@ const potteryDatabase = [
     },
     {
         "id": 42,
-        "title": "Diamond Jewlery Holder",
+        "title": "Diamond Jewelry Holder",
         "image": "images/pottery/diamondJewleryHolder.jpeg",
-        "story": "My mom got me the cutest earrings I have ever seen and like a pothead that I am the first thought that came to mind is 'let me make a earrings holder for them'.  ",
+        "story": "My mom got me the cutest earrings I have ever seen, and like the pothead that I am, the first thought that came to mind was 'let me make an earring holder for them'.",
         "processImages": [
             "images/process/diamondJewleryHolder-1.jpeg",
             "images/process/diamondJewleryHolder-2.jpeg",
@@ -468,7 +468,7 @@ const potteryDatabase = [
     },
     {
         "id": 43,
-        "title": "Cappucino Mug",
+        "title": "Cappuccino Mug",
         "image": "images/pottery/cappucinoMug.jpeg",
         "story": "",
         "processImages": [
@@ -479,7 +479,7 @@ const potteryDatabase = [
     },
     {
         "id": 44,
-        "title": "Clock",
+        "title": "First Clock",
         "image": "images/pottery/firstClock.jpeg",
         "story": "This was the first slip-casting mold I ever made. I found this metal plate at a vintage shop in my neighborhood. At first, I was planning to use it to make a set of plates, but when the first mold came out, it just felt like it wanted to be a clock.",
         "processImages": [
@@ -504,7 +504,7 @@ const potteryDatabase = [
         "id": 45,
         "title": "Berry Strainer",
         "image": "images/pottery/fruitStrainer.jpeg",
-        "story": "Another piece from my kitchen utensils era. I was so sad to see that one of the handles broke off when it came out of the kiln. So I sanded the other handle off instead of trying to glue it on. And thennnn the glaze decided to do this during the seond fire. Not what I planned but I am not mad about it.",
+        "story": "Another piece from my kitchen utensils era. I was so sad to see that one of the handles broke off when it came out of the kiln. So I sanded the other handle off instead of trying to glue it on. And thennnn the glaze decided to do this during the second fire. Not what I planned but I am not mad about it.",
         "processImages": [
             "images/process/fruitStrainer-1.jpeg",
             "images/process/fruitStrainer-2.jpeg",
@@ -519,7 +519,7 @@ const potteryDatabase = [
     },
     {
         "id": 46,
-        "title": "Lemon Squizer",
+        "title": "Lemon Squeezer",
         "image": "images/pottery/lemonSquizer.jpeg",
         "story": "I’m officially in my kitchen utensils era, and this is the first piece of my collection. Honestly, I am not even using it as a lemon squeezer—it’s currently living its best life as a statement piece in my bar corner.",
         "processImages": [
@@ -532,7 +532,7 @@ const potteryDatabase = [
     },
     {
         "id": 47,
-        "title": "Blue Vase",
+        "title": "Blue Vase II",
         "image": "images/pottery/blueVase.jpeg",
         "story": "",
         "processImages": [
@@ -644,7 +644,7 @@ const potteryDatabase = [
         "id": 56,
         "title": "Soap Holder",
         "image": "images/pottery/SoapHolder.jpeg",
-        "story": "This was the first piece that I tried to do some hand building after throwing on the wheel. I tried to follow my design as much as possible. It turned out great and I was using using it however it broke when I moved apartments.",
+        "story": "This was the first piece that I tried to do some hand building after throwing on the wheel. I tried to follow my design as much as possible. It turned out great and I was using it, but it broke when I moved apartments.",
         "processImages": [
             "images/process/soapHolder-1.jpeg",
             "images/process/soapHolder-2.jpeg",
@@ -661,7 +661,7 @@ const potteryDatabase = [
     },
     {
         "id": 58,
-        "title": "Coffee And Sugar jars",
+        "title": "Coffee and Sugar Jars",
         "image": "images/pottery/coffeeAndSugarjars.jpeg",
         "story": "",
         "processImages": [
@@ -690,7 +690,7 @@ const potteryDatabase = [
     },
     {
         "id": 61,
-        "title": "3crookedcups",
+        "title": "Three Crooked Cups",
         "image": "images/pottery/3crookedcups.jpeg",
         "story": "",
         "processImages": [
@@ -699,7 +699,7 @@ const potteryDatabase = [
     },
     {
         "id": 62,
-        "title": "Green Dumplings Plate",
+        "title": "Green Dumpling Plate",
         "image": "images/pottery/greenDumpingsPlate.jpeg",
         "story": "",
         "processImages": [
@@ -713,7 +713,7 @@ const potteryDatabase = [
         "id": 63,
         "title": "Ring Holder",
         "image": "images/pottery/ringHolder.jpeg",
-        "story": "Honestly I did not know what to use this for. This was one of the first pieces where I was trying to do something other than just a cilinder. I ended up giving it to my mom.",
+        "story": "Honestly I did not know what to use this for. This was one of the first pieces where I was trying to do something other than just a cylinder. I ended up giving it to my mom.",
         "processImages": [
             "images/process/ringHolder-1.jpeg",
             "images/process/ringHolder-2.jpeg"
@@ -731,7 +731,7 @@ const potteryDatabase = [
     },
     {
         "id": 65,
-        "title": "Black And Yellow Ashtrays",
+        "title": "Black and Yellow Ashtrays",
         "image": "images/pottery/blackAndYellowAshtrays.jpeg",
         "story": "",
         "processImages": [
@@ -754,7 +754,7 @@ const potteryDatabase = [
     },
     {
         "id": 67,
-        "title": "Blue Q Tip Holder",
+        "title": "Blue Q-Tip Holder",
         "image": "images/pottery/blueQTipHolder.jpeg",
         "story": "",
         "processImages": [
@@ -773,7 +773,7 @@ const potteryDatabase = [
     },
     {
         "id": 69,
-        "title": "Pink Espresso Shot",
+        "title": "Pink Espresso Cup",
         "image": "images/pottery/pinkEspressoShot.jpeg",
         "story": "",
         "processImages": [
@@ -794,7 +794,7 @@ const potteryDatabase = [
         "id": 71,
         "title": "Christmas Tree Cup",
         "image": "images/pottery/christmasTreeCup.jpeg",
-        "story": "I was trying to experiment with glaze and different surfaces I guess? I really wanted 4 green dots in columns but the green glaze had a mind of its own. Now it just looks like a bunch of christmas trees.",
+        "story": "I was trying to experiment with glaze and different surfaces I guess? I really wanted 4 green dots in columns but the green glaze had a mind of its own. Now it just looks like a bunch of Christmas trees.",
         "processImages": [
             "images/process/christmasTreeCup-1.jpeg",
             "images/process/christmasTreeCup-2.jpeg"
@@ -813,14 +813,14 @@ const potteryDatabase = [
         "id": 73,
         "title": "Leopard Cup",
         "image": "images/pottery/yellowFilxhan.jpeg",
-        "story": "I tried to make more functional things as I progressed (literally my 3rd piece). So I made this cute espresso cup with a little plate. ",
+        "story": "I tried to make more functional things as I progressed (literally my 3rd piece). So I made this cute espresso cup with a little plate.",
         "processImages": [
             "images/process/yellowFilxhan-1.jpeg"
         ]
     },
     {
         "id": 74,
-        "title": "My Tools Holder",
+        "title": "Tool Holder",
         "image": "images/pottery/myToolsHolder.jpeg",
         "story": "After making my first piece and loving the glaze, I wanted to make something that I could use in my pottery process. I made a holder for my tools.",
         "processImages": []
