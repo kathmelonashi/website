@@ -60,7 +60,7 @@ const potteryDatabase = [
     {
         "id": 5,
         "title": "Striped Heart",
-        "image": "images/process/stripedHeart-1.jpeg",
+        "image": "images/pottery/strippedHeart.jpeg",
         "story": "",
         "processImages": [
             "images/process/Stripes.jpeg",
