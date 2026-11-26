@@ -162,6 +162,35 @@ body::after {
     text-align: center;
 }
 
+/* Piece status tag (available / sold / made to order) */
+.piece-status {
+    display: inline-block;
+    font-family: 'Crimson Text', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+}
+
+.piece-status.status-available {
+    color: #5f7048;
+    background: rgba(156, 169, 134, 0.18);
+}
+
+.piece-status.status-sold {
+    color: var(--earth-brown);
+    background: rgba(139, 111, 71, 0.12);
+}
+
+.piece-status.status-made-to-order {
+    color: #47756d;
+    background: rgba(110, 156, 148, 0.16);
+}
+
 /* Responsive Navigation */
 @media (max-width: 768px) {
     .nav-menu {

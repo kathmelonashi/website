@@ -37,6 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             // Small copy of the photo; the first couple of rows load right
             // away, the rest only as they're about to scroll into view
+            // Corner tag for pieces that are sold or made to order
+            // ("available" is the default, so tagging every card would just be noise)
+            const status = pieceStatus(piece);
+            if (status && status.className !== 'status-available') {
+                const tag = document.createElement('span');
+                tag.className = `piece-status gallery-item-status ${status.className}`;
+                tag.textContent = status.label;
+                item.appendChild(tag);
+            }
+
             const img = item.querySelector('img');
             if (index >= count * 2) img.loading = 'lazy';
             setOptimizedImage(img, piece.image, 'thumb');

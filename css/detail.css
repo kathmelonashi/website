@@ -21,6 +21,43 @@
     color: var(--terracotta);
 }
 
+/* Back button on the left, previous / next piece on the right */
+.detail-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-toolbar .back-button {
+    margin-bottom: 0;
+}
+
+.piece-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: -12px;
+}
+
+/* Arrow-only buttons: bigger glyph and a roomy tap area */
+.piece-nav-button {
+    background: none;
+    border: none;
+    font-family: 'Crimson Text', serif;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--clay-dark);
+    cursor: pointer;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.piece-nav-button:hover {
+    color: var(--terracotta);
+}
+
 .detail-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,7 +80,11 @@
     font-family: 'Playfair Display', serif;
     font-size: 42px;
     color: var(--clay-dark);
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+}
+
+.detail-title + .piece-status {
+    margin-bottom: 24px;
 }
 
 .detail-story {
@@ -218,6 +259,17 @@
 
     .back-button {
         font-size: 16px;
+    }
+
+    /* Phones: keep previous / next in the top row, just tighter */
+    .detail-toolbar {
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .detail-toolbar .back-button,
+    .detail-toolbar .piece-nav-button {
+        white-space: nowrap;
     }
 
     .lightbox-close {

@@ -4,6 +4,16 @@
 let currentLightboxImages = [];
 let currentLightboxIndex = 0;
 
+// Index of the piece currently open in the detail view (-1 when none)
+let currentPieceIndex = -1;
+
+// Step to the previous (-1) or next (+1) piece, wrapping around at the ends
+function showAdjacentPiece(step) {
+    if (currentPieceIndex < 0) return;
+    const total = potteryDatabase.length;
+    window.location.hash = `detail/${(currentPieceIndex + step + total) % total}`;
+}
+
 // Show piece detail
 function showPieceDetail(pieceId) {
     const piece = potteryDatabase[pieceId];
@@ -14,10 +24,36 @@ function showPieceDetail(pieceId) {
         return;
     }
 
+    currentPieceIndex = potteryDatabase.indexOf(piece);
+
+    // Fetch the neighbours' photos ahead of time so Previous / Next feel instant
+    [-1, 1].forEach(step => {
+        const total = potteryDatabase.length;
+        const neighbour = potteryDatabase[(currentPieceIndex + step + total) % total];
+        new Image().src = optimizedImage(neighbour.image, 'large');
+    });
+
     // Update detail page content
     setOptimizedImage(document.getElementById('detail-image'), piece.image, 'large');
     document.getElementById('detail-title').textContent = piece.title;
     document.getElementById('detail-story').textContent = piece.story;
+
+    // Status tag under the title, and a contact prompt that matches it
+    const status = pieceStatus(piece);
+    const statusEl = document.getElementById('detail-status');
+    // "Available" is hidden for now — to bring the tag back, set SHOW_AVAILABLE_TAG to true
+    const SHOW_AVAILABLE_TAG = false;
+    const showTag = status && (SHOW_AVAILABLE_TAG || status.className !== 'status-available');
+    statusEl.textContent = showTag ? status.label : '';
+    statusEl.className = 'piece-status' + (showTag ? ` ${status.className}` : '');
+    statusEl.style.display = showTag ? '' : 'none';
+
+    const prompts = {
+        'status-available': 'Interested in this piece?',
+        'status-made-to-order': 'Want one made for you?'
+    };
+    document.getElementById('contact-prompt-text').textContent =
+        (status && prompts[status.className]) || 'Want something similar?';
 
     // Add process images
     const processContainer = document.getElementById('process-images');
@@ -106,7 +142,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keyboard navigation
     document.addEventListener('keydown', (e) => {
-        if (!lightbox.classList.contains('active')) return;
+        if (!lightbox.classList.contains('active')) {
+            // Lightbox closed: arrow keys step between pieces on the detail page
+            const onDetailPage = document.getElementById('detail').classList.contains('active');
+            const typing = /^(INPUT|TEXTAREA)$/.test(e.target.tagName);
+            if (onDetailPage && !typing) {
+                if (e.key === 'ArrowRight') showAdjacentPiece(1);
+                else if (e.key === 'ArrowLeft') showAdjacentPiece(-1);
+            }
+            return;
+        }
 
         if (e.key === 'Escape') {
             closeLightbox();

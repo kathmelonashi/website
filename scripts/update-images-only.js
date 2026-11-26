@@ -53,6 +53,7 @@ function updateIdsOnly() {
 const potteryDatabase = ${JSON.stringify(updatedDatabase, null, 4)};
 
 // To customize a piece, edit it directly in this file
+// "status" can be "available", "sold" or "made to order" (leave it "" to show nothing)
 // Running update-gallery will ONLY update ids sequentially from 0 to N
 // Everything else is preserved
 `;

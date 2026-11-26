@@ -21,3 +21,16 @@ function setOptimizedImage(img, src, variant) {
     };
     img.src = optimizedImage(src, variant);
 }
+
+// Piece status ("available", "sold", "made to order") -> label and CSS class.
+// Returns null for a missing or unrecognised status, so nothing is shown.
+const PIECE_STATUSES = {
+    'available': { label: 'Available', className: 'status-available' },
+    'sold': { label: 'Sold', className: 'status-sold' },
+    'made to order': { label: 'Made to order', className: 'status-made-to-order' }
+};
+
+function pieceStatus(piece) {
+    const key = (piece.status || '').trim().toLowerCase().replace(/[-_]+/g, ' ');
+    return PIECE_STATUSES[key] || null;
+}

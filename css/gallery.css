@@ -54,6 +54,18 @@
     transform: scale(1.05);
 }
 
+/* Corner tag on sold / made-to-order pieces; solid backing so it reads over a photo */
+.gallery-item-status.piece-status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 1;
+    font-size: 11px;
+    padding: 3px 10px;
+    background: rgba(245, 241, 232, 0.92);
+    border-color: transparent;
+}
+
 .gallery-item-overlay {
     position: absolute;
     top: 0;
@@ -91,6 +103,13 @@
 
     .gallery-column {
         gap: 16px;
+    }
+
+    .gallery-item-status.piece-status {
+        top: 8px;
+        left: 8px;
+        font-size: 9px;
+        padding: 2px 8px;
     }
 
     .gallery-item-overlay span {

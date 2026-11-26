@@ -7,6 +7,7 @@ const potteryDatabase = [
         "title": "Black and White Square Swirl",
         "image": "images/pottery/blackAndWhiteSquareSwirl.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/BlackandWhiteSqureSwirl-0.jpeg",
             "images/process/BlackandWhiteSqureSwirl-1.jpeg"
@@ -17,6 +18,7 @@ const potteryDatabase = [
         "title": "Black and White Swirl",
         "image": "images/pottery/blackAndWhiteSwirl.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/swirl.jpeg",
             "images/process/blackAndWhiteSwirl-0.jpeg"
@@ -27,6 +29,7 @@ const potteryDatabase = [
         "title": "Square Spiral",
         "image": "images/pottery/squareSpiral.jpeg",
         "story": "",
+        "status": "available",
         "processImages": []
     },
     {
@@ -34,6 +37,7 @@ const potteryDatabase = [
         "title": "Pinch Pot Candle",
         "image": "images/pottery/pinchPotCandle.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinchPotCandle-0.jpeg",
             "images/process/pinchPotCandle-1.jpeg",
@@ -45,6 +49,7 @@ const potteryDatabase = [
         "title": "Pink Series",
         "image": "images/pottery/pinkSeries.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinkSeries-0.jpeg"
         ]
@@ -54,6 +59,7 @@ const potteryDatabase = [
         "title": "Puffer Fish",
         "image": "images/pottery/pufferFish.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pufferFish-0.jpeg",
             "images/process/pufferFish-1.jpeg"
@@ -64,6 +70,7 @@ const potteryDatabase = [
         "title": "Triangle Plate",
         "image": "images/pottery/trianglePlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/trianglePlate-0.jpeg"
         ]
@@ -73,6 +80,7 @@ const potteryDatabase = [
         "title": "Soy Sauce Holders II",
         "image": "images/pottery/SoySauceHolders-1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": []
     },
     {
@@ -80,6 +88,7 @@ const potteryDatabase = [
         "title": "Chop Chop Holder",
         "image": "images/process/chopchopHolder-2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/chopchopHolder-0.jpeg",
             "images/process/chopchopHolder-1.jpeg",
@@ -91,6 +100,7 @@ const potteryDatabase = [
         "title": "Toothbrush and Soap Holder",
         "image": "images/process/toothbrushandSoapHolder-2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/toothbrushandSoapHolder-0.jpeg",
             "images/process/toothbrushandSoapHolder-1.jpeg",
@@ -102,6 +112,7 @@ const potteryDatabase = [
         "title": "Heart Holder",
         "image": "images/process/heartHolder-0.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/heartHolder-0.jpeg"
         ]
@@ -111,6 +122,7 @@ const potteryDatabase = [
         "title": "Dessert Dish",
         "image": "images/process/dessertDish.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/dessertDish.jpeg"
         ]
@@ -120,6 +132,7 @@ const potteryDatabase = [
         "title": "Broken Plate",
         "image": "images/process/brokenPlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/brokenPlate.jpeg"
         ]
@@ -129,6 +142,7 @@ const potteryDatabase = [
         "title": "It Is What It Is II",
         "image": "images/pottery/itiswhatitis2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/itIsWhatitis2.jpeg"
         ]
@@ -138,6 +152,7 @@ const potteryDatabase = [
         "title": "Marble Plate",
         "image": "images/pottery/marblePlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marble-1.jpeg",
             "images/process/marble-2.jpeg",
@@ -149,6 +164,7 @@ const potteryDatabase = [
         "title": "Sunset Plate",
         "image": "images/pottery/bellyButton.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/bellyButton-1.jpeg"
         ]
@@ -158,6 +174,7 @@ const potteryDatabase = [
         "title": "Stretching Cat",
         "image": "images/process/marblePiece-3.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marble-1.jpeg",
             "images/process/marble-2.jpeg",
@@ -171,6 +188,7 @@ const potteryDatabase = [
         "title": "Marble Heart",
         "image": "images/process/marbleHeart-1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marble-1.jpeg",
             "images/process/marble-2.jpeg",
@@ -182,6 +200,7 @@ const potteryDatabase = [
         "title": "Green Checkered Plate",
         "image": "images/process/checkeredPlate-1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/checkered.jpeg",
             "images/process/checkeredPlate-0.jpeg",
@@ -194,6 +213,7 @@ const potteryDatabase = [
         "title": "Pink X Plate",
         "image": "images/pottery/pinkXPlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/Xplate-1.jpeg",
             "images/process/Xplate-2.jpeg"
@@ -204,6 +224,7 @@ const potteryDatabase = [
         "title": "Checkered Coffee Cup",
         "image": "images/pottery/checkeredCoffeeCup.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/checkered.jpeg",
             "images/process/checkeredCoffeeMug-1.jpeg",
@@ -215,6 +236,7 @@ const potteryDatabase = [
         "title": "Chocolate Holder",
         "image": "images/pottery/chocolateHolder.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/chocolateHolder-1.jpeg",
             "images/process/chocolateHolder-2.jpeg"
@@ -225,6 +247,7 @@ const potteryDatabase = [
         "title": "Patterned Small Plates",
         "image": "images/pottery/patternedSmallPlates.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/patternSmallPlates-1.jpeg",
             "images/process/patternSmallPlates-2.jpeg"
@@ -235,6 +258,7 @@ const potteryDatabase = [
         "title": "Giant Planter",
         "image": "images/pottery/giantPlanter.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/bigPlanter-0.jpeg",
             "images/process/bigPlanter-1.jpeg",
@@ -251,6 +275,7 @@ const potteryDatabase = [
         "title": "Striped Heart",
         "image": "images/pottery/strippedHeart.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/Stripes.jpeg",
             "images/process/stripedHeart-1.jpeg"
@@ -261,6 +286,7 @@ const potteryDatabase = [
         "title": "Cereal Bowl",
         "image": "images/pottery/cerealBowl.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/cerealBowl-1.jpeg",
             "images/process/cerealBowl-2.jpeg",
@@ -273,6 +299,7 @@ const potteryDatabase = [
         "title": "Marbled Plate",
         "image": "images/pottery/marbledPlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marbeledPlate-1.jpeg",
             "images/process/marbledPlate-2.jpeg",
@@ -286,6 +313,7 @@ const potteryDatabase = [
         "title": "Marbled Plates",
         "image": "images/pottery/marbledPlates.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marbeledPlate-1.jpeg",
             "images/process/marbledPlate-2.jpeg"
@@ -296,6 +324,7 @@ const potteryDatabase = [
         "title": "It Is What It Is",
         "image": "images/pottery/itIsWhatItIs.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/ItiSWhatItIs-1.jpeg",
             "images/process/ItIsWhatItIs-2.jpeg"
@@ -306,6 +335,7 @@ const potteryDatabase = [
         "title": "Soy Sauce Holders",
         "image": "images/pottery/soySauceHolders.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/soySauceHolders-1.jpeg",
             "images/process/soySauceHolders-3.jpeg",
@@ -317,6 +347,7 @@ const potteryDatabase = [
         "title": "Marbled Key Holder",
         "image": "images/pottery/marpledKeyHolder.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/marbeledPlate-1.jpeg",
             "images/process/marbledPlate-2.jpeg",
@@ -329,6 +360,7 @@ const potteryDatabase = [
         "title": "Black and White Swirl Cup",
         "image": "images/pottery/blackAndWhiteSwirlCup.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blackAndWhiteSwirlyCup-1.jpeg",
             "images/process/blackAndWhiteSwirlyCup-3.jpeg",
@@ -341,6 +373,7 @@ const potteryDatabase = [
         "title": "Honey Jar",
         "image": "images/pottery/honeyJar1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/honeyJar-2.jpeg",
             "images/process/honeyJar-3.jpeg",
@@ -353,6 +386,7 @@ const potteryDatabase = [
         "title": "Flower Vase",
         "image": "images/pottery/flowerVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/flowerVase-0.jpeg",
             "images/process/flowerVase-1.jpeg",
@@ -364,6 +398,7 @@ const potteryDatabase = [
         "title": "Planter",
         "image": "images/pottery/planter-.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/planter.jpeg"
         ]
@@ -373,6 +408,7 @@ const potteryDatabase = [
         "title": "Honeycomb Vase",
         "image": "images/pottery/honeycombVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/honeyCombVase.jpeg"
         ]
@@ -382,6 +418,7 @@ const potteryDatabase = [
         "title": "Watermelon Seed Bowl",
         "image": "images/process/watermelonSeed-2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/watermelonSeed-1.jpeg",
             "images/process/watermelonSeed-2.jpeg",
@@ -393,6 +430,7 @@ const potteryDatabase = [
         "title": "Red Jar",
         "image": "images/pottery/redJar.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/jars-1.jpeg",
             "images/process/redJar.jpeg"
@@ -403,6 +441,7 @@ const potteryDatabase = [
         "title": "Three-Belly Vase",
         "image": "images/pottery/3bellyVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/3bellyVase-0.jpeg",
             "images/process/3bellyVase-1.jpeg"
@@ -413,6 +452,7 @@ const potteryDatabase = [
         "title": "Pencil Holder",
         "image": "images/pottery/pencilHolder.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/vaseWithABelly-0.jpeg",
             "images/process/vaseWithABelly-1.jpeg",
@@ -424,6 +464,7 @@ const potteryDatabase = [
         "title": "Blue Vase",
         "image": "images/pottery/blueVase-1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueVase--0.jpeg",
             "images/process/blueVase--1.jpeg"
@@ -434,6 +475,7 @@ const potteryDatabase = [
         "title": "Ramen Bowl",
         "image": "images/pottery/ramenBowl.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/ramenBowl-1.jpeg",
             "images/process/ramenBowl-2.jpeg",
@@ -445,6 +487,7 @@ const potteryDatabase = [
         "title": "Candles",
         "image": "images/pottery/candles-2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/candles-1.jpeg"
         ]
@@ -454,6 +497,7 @@ const potteryDatabase = [
         "title": "Candles II",
         "image": "images/pottery/candles-3.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/candles-1.jpeg"
         ]
@@ -463,6 +507,7 @@ const potteryDatabase = [
         "title": "Red Candles",
         "image": "images/pottery/redCandles.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/redCandles-1.jpeg",
             "images/process/redCandles-2.jpeg"
@@ -473,6 +518,7 @@ const potteryDatabase = [
         "title": "Aerated Vase",
         "image": "images/pottery/AeratedVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/AeratedVase-1.jpeg",
             "images/process/AeratedVase-2.jpeg",
@@ -484,6 +530,7 @@ const potteryDatabase = [
         "title": "Small Jar",
         "image": "images/pottery/SmallJar.jpeg",
         "story": "",
+        "status": "available",
         "processImages": []
     },
     {
@@ -491,6 +538,7 @@ const potteryDatabase = [
         "title": "Flores Mug",
         "image": "images/pottery/floresMug.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/floresMug-2.jpeg"
         ]
@@ -500,6 +548,7 @@ const potteryDatabase = [
         "title": "Blue Shot Glasses",
         "image": "images/pottery/blueShotGlasses.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueShotGlasses-1.jpeg",
             "images/process/blueShotGlasses-2.jpeg"
@@ -510,6 +559,7 @@ const potteryDatabase = [
         "title": "Black Soap Holder",
         "image": "images/pottery/blackSoapHolder.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blackSoapHolder-1.jpeg",
             "images/process/blackSoapHolder-2.jpeg",
@@ -523,6 +573,7 @@ const potteryDatabase = [
         "title": "Home Clock",
         "image": "images/pottery/homeClock.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/homeClock-1.jpeg",
             "images/process/homeClock-2.jpeg",
@@ -534,6 +585,7 @@ const potteryDatabase = [
         "title": "Palm Tree Mug",
         "image": "images/pottery/palmTreeMug.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/palmTreeMug-1.jpeg",
             "images/process/palmTreeMug-2.jpeg"
@@ -544,6 +596,7 @@ const potteryDatabase = [
         "title": "Sunflower Candle",
         "image": "images/pottery/sunFlowerCandle.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/sunfloweCandle.jpeg"
         ]
@@ -553,6 +606,7 @@ const potteryDatabase = [
         "title": "Flores Mug II",
         "image": "images/process/floresMug-0.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/floresMug-0.jpeg",
             "images/process/floresMug-1.jpeg"
@@ -563,6 +617,7 @@ const potteryDatabase = [
         "title": "Forest Candle",
         "image": "images/pottery/forestCandle.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/forestCandle-2.jpeg",
             "images/process/forestCandle-3.jpeg",
@@ -577,6 +632,7 @@ const potteryDatabase = [
         "title": "Flower Plates",
         "image": "images/pottery/flowerPlates.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/flowerPlates-0.jpeg",
             "images/process/flowerPlates-1.jpeg",
@@ -592,6 +648,7 @@ const potteryDatabase = [
         "title": "Pink Soap Dish",
         "image": "images/pottery/pinkSoapDish.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinkSoapDish.jpeg"
         ]
@@ -601,6 +658,7 @@ const potteryDatabase = [
         "title": "Happy Mushroom",
         "image": "images/pottery/happyMushroom.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/mushroomJar-1.jpeg",
             "images/process/mushroomJar-2.jpeg",
@@ -613,6 +671,7 @@ const potteryDatabase = [
         "title": "Honey Flux Plate",
         "image": "images/pottery/whitePlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/whitePlate-1.jpeg",
             "images/process/whitePlate-2.jpeg",
@@ -624,6 +683,7 @@ const potteryDatabase = [
         "title": "Second Clock",
         "image": "images/pottery/secondClock.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/secondClock-1.jpeg",
             "images/process/secondClock-2.jpeg",
@@ -637,6 +697,7 @@ const potteryDatabase = [
         "title": "Pink Planter",
         "image": "images/pottery/pinkPlanter.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinkPlanter-1.jpeg"
         ]
@@ -646,6 +707,7 @@ const potteryDatabase = [
         "title": "Diamond Jewelry Holder",
         "image": "images/pottery/diamondJewleryHolder.jpeg",
         "story": "My mom got me the cutest earrings I have ever seen, and like the pothead that I am, the first thought that came to mind was 'let me make an earring holder for them'.",
+        "status": "available",
         "processImages": [
             "images/process/diamondJewleryHolder-1.jpeg",
             "images/process/diamondJewleryHolder-2.jpeg",
@@ -660,6 +722,7 @@ const potteryDatabase = [
         "title": "Cappuccino Mug",
         "image": "images/pottery/cappucinoMug.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/cappucinoMug-1.jpeg",
             "images/process/cappucinoMug-2.jpeg",
@@ -671,6 +734,7 @@ const potteryDatabase = [
         "title": "First Clock",
         "image": "images/pottery/firstClock.jpeg",
         "story": "This was the first slip-casting mold I ever made. I found this metal plate at a vintage shop in my neighborhood. At first, I was planning to use it to make a set of plates, but when the first mold came out, it just felt like it wanted to be a clock.",
+        "status": "available",
         "processImages": [
             "images/process/clock-1.jpeg",
             "images/process/clock-2.jpeg",
@@ -694,6 +758,7 @@ const potteryDatabase = [
         "title": "Berry Strainer",
         "image": "images/pottery/fruitStrainer.jpeg",
         "story": "Another piece from my kitchen utensils era. I was so sad to see that one of the handles broke off when it came out of the kiln. So I sanded the other handle off instead of trying to glue it on. And thennnn the glaze decided to do this during the second fire. Not what I planned but I am not mad about it.",
+        "status": "available",
         "processImages": [
             "images/process/fruitStrainer-1.jpeg",
             "images/process/fruitStrainer-2.jpeg",
@@ -711,6 +776,7 @@ const potteryDatabase = [
         "title": "Lemon Squeezer",
         "image": "images/pottery/lemonSquizer.jpeg",
         "story": "I’m officially in my kitchen utensils era, and this is the first piece of my collection. Honestly, I am not even using it as a lemon squeezer—it’s currently living its best life as a statement piece in my bar corner.",
+        "status": "available",
         "processImages": [
             "images/process/lemonSquizer-1.jpeg",
             "images/process/lemonSquizer-2.jpeg",
@@ -724,6 +790,7 @@ const potteryDatabase = [
         "title": "Blue Vase II",
         "image": "images/pottery/blueVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueVase-1.jpeg",
             "images/process/blueVase-2.jpeg",
@@ -735,6 +802,7 @@ const potteryDatabase = [
         "title": "Yellow Espresso Cup",
         "image": "images/pottery/yellowEspressoCup.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/yellowEspressoCup-1.jpeg",
             "images/process/yellowEspressoCup-2.jpeg"
@@ -745,6 +813,7 @@ const potteryDatabase = [
         "title": "Yellow Vase",
         "image": "images/pottery/yellowVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/yellowVase-1.jpeg",
             "images/process/yellowVase-2.jpeg",
@@ -756,6 +825,7 @@ const potteryDatabase = [
         "title": "Purple Vase",
         "image": "images/pottery/purpleVase.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/purpleVase-1.jpeg",
             "images/process/purpleVase-2.jpeg",
@@ -767,6 +837,7 @@ const potteryDatabase = [
         "title": "Blue Platter",
         "image": "images/pottery/bluePlatter.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/bluePlatter-1.jpeg",
             "images/process/bluePlatter-2.jpeg",
@@ -782,6 +853,7 @@ const potteryDatabase = [
         "title": "Crocodile Incense Burner",
         "image": "images/pottery/crocodileIncenseBurner.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/crocodileIncenseBurner-1.jpeg",
             "images/process/crocodileIncenseBurner-2.jpeg",
@@ -799,6 +871,7 @@ const potteryDatabase = [
         "title": "Ashtray",
         "image": "images/pottery/ashtray.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/ashtray-1.jpeg",
             "images/process/ashtray-2.jpeg",
@@ -813,6 +886,7 @@ const potteryDatabase = [
         "title": "Pink Ashtray",
         "image": "images/pottery/pinkAshtray.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinkAshtray-1.jpeg",
             "images/process/pinkAshtray-2.jpeg",
@@ -824,6 +898,7 @@ const potteryDatabase = [
         "title": "Cat Bowls",
         "image": "images/pottery/catBowls.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/catBowls-1.jpeg",
             "images/process/catBowls-2.jpeg"
@@ -834,6 +909,7 @@ const potteryDatabase = [
         "title": "Soap Holder",
         "image": "images/pottery/SoapHolder.jpeg",
         "story": "This was the first piece that I tried to do some hand building after throwing on the wheel. I tried to follow my design as much as possible. It turned out great and I was using it, but it broke when I moved apartments.",
+        "status": "available",
         "processImages": [
             "images/process/soapHolder-1.jpeg",
             "images/process/soapHolder-2.jpeg",
@@ -846,6 +922,7 @@ const potteryDatabase = [
         "title": "Pink Bowl",
         "image": "images/pottery/pinkBowl.jpeg",
         "story": "",
+        "status": "available",
         "processImages": []
     },
     {
@@ -853,6 +930,7 @@ const potteryDatabase = [
         "title": "Coffee and Sugar Jars",
         "image": "images/pottery/coffeeAndSugarjars.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/coffeeAndSugarJars-1.jpeg",
             "images/process/coffeeAndSugarJars-2.jpeg"
@@ -863,6 +941,7 @@ const potteryDatabase = [
         "title": "Pinched Twin Cups",
         "image": "images/process/IMG_4892.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/IMG_4892.jpeg"
         ]
@@ -872,6 +951,7 @@ const potteryDatabase = [
         "title": "Blue Ashtray",
         "image": "images/pottery/blueAshtray.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueAshtray-1.jpeg",
             "images/process/blueAshtray-2.jpeg"
@@ -882,6 +962,7 @@ const potteryDatabase = [
         "title": "Three Crooked Cups",
         "image": "images/pottery/3crookedcups.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/3crookedcups-1.jpeg"
         ]
@@ -891,6 +972,7 @@ const potteryDatabase = [
         "title": "Green Dumpling Plate",
         "image": "images/pottery/greenDumpingsPlate.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/DumpingsAndSoySouceHolder-1.jpeg",
             "images/process/DumpingsAndSoySouceHolder-2.jpeg",
@@ -903,6 +985,7 @@ const potteryDatabase = [
         "title": "Ring Holder",
         "image": "images/pottery/ringHolder.jpeg",
         "story": "Honestly I did not know what to use this for. This was one of the first pieces where I was trying to do something other than just a cylinder. I ended up giving it to my mom.",
+        "status": "available",
         "processImages": [
             "images/process/ringHolder-1.jpeg",
             "images/process/ringHolder-2.jpeg"
@@ -913,6 +996,7 @@ const potteryDatabase = [
         "title": "Coffee Shot Pourer",
         "image": "images/process/CofeeShotPourer-2.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/CofeeShotPourer-1.jpeg",
             "images/process/CofeeShotPourer-2.jpeg"
@@ -923,6 +1007,7 @@ const potteryDatabase = [
         "title": "Black and Yellow Ashtrays",
         "image": "images/pottery/blackAndYellowAshtrays.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blackAndYellowAshtrays-1.jpeg",
             "images/process/blackAndYellowAshtrays-2.jpeg",
@@ -936,6 +1021,7 @@ const potteryDatabase = [
         "title": "Black Mug",
         "image": "images/pottery/blackMug.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blackMug-1.jpeg",
             "images/process/blackMug-2.jpeg"
@@ -946,6 +1032,7 @@ const potteryDatabase = [
         "title": "Blue Q-Tip Holder",
         "image": "images/pottery/blueQTipHolder.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueQTipHolder-1.jpeg"
         ]
@@ -955,6 +1042,7 @@ const potteryDatabase = [
         "title": "Blue Swirly Cup",
         "image": "images/pottery/blueSwirlyCup.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/blueSwirlyCup-1.jpeg",
             "images/process/blueSwirlyCup-2.jpeg"
@@ -965,6 +1053,7 @@ const potteryDatabase = [
         "title": "Pink Espresso Cup",
         "image": "images/pottery/pinkEspressoShot.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/pinkEspressoShot-1.jpeg",
             "images/process/pinkEspressoShot-2.jpeg"
@@ -975,6 +1064,7 @@ const potteryDatabase = [
         "title": "Square Handle Mug",
         "image": "images/pottery/SquareHandle.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/squareHandleMug-1.jpeg"
         ]
@@ -984,6 +1074,7 @@ const potteryDatabase = [
         "title": "Christmas Tree Cup",
         "image": "images/pottery/christmasTreeCup.jpeg",
         "story": "I was trying to experiment with glaze and different surfaces I guess? I really wanted 4 green dots in columns but the green glaze had a mind of its own. Now it just looks like a bunch of Christmas trees.",
+        "status": "available",
         "processImages": [
             "images/process/christmasTreeCup-1.jpeg",
             "images/process/christmasTreeCup-2.jpeg"
@@ -994,6 +1085,7 @@ const potteryDatabase = [
         "title": "First Jar",
         "image": "images/process/firstJar-1.jpeg",
         "story": "",
+        "status": "available",
         "processImages": [
             "images/process/firstJar-1.jpeg"
         ]
@@ -1003,6 +1095,7 @@ const potteryDatabase = [
         "title": "Leopard Cup",
         "image": "images/pottery/yellowFilxhan.jpeg",
         "story": "I tried to make more functional things as I progressed (literally my 3rd piece). So I made this cute espresso cup with a little plate.",
+        "status": "available",
         "processImages": [
             "images/process/yellowFilxhan-1.jpeg"
         ]
@@ -1012,6 +1105,7 @@ const potteryDatabase = [
         "title": "Tool Holder",
         "image": "images/pottery/myToolsHolder.jpeg",
         "story": "After making my first piece and loving the glaze, I wanted to make something that I could use in my pottery process. I made a holder for my tools.",
+        "status": "available",
         "processImages": []
     },
     {
@@ -1019,6 +1113,7 @@ const potteryDatabase = [
         "title": "Speckled Cup",
         "image": "images/pottery/IMG_4879.jpeg",
         "story": "",
+        "status": "available",
         "processImages": []
     },
     {
@@ -1026,6 +1121,7 @@ const potteryDatabase = [
         "title": "First Piece Ever",
         "image": "images/pottery/firstPieceEver.jpeg",
         "story": "This was the first piece I ever made. I had no idea what I was doing but I love how the glaze turned out.",
+        "status": "available",
         "processImages": [
             "images/process/firstPieceEver-1.jpeg"
         ]
@@ -1033,5 +1129,6 @@ const potteryDatabase = [
 ];
 
 // To customize a piece, edit it directly in this file
+// "status" can be "available", "sold" or "made to order" (leave it "" to show nothing)
 // Running update-gallery will ONLY update ids sequentially from 0 to N
 // Everything else is preserved

@@ -94,6 +94,12 @@
     max-width: 38ch;
 }
 
+.home-message a {
+    color: var(--home-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* Responsive Home Page */
 @media (max-width: 768px) {
     #home {
