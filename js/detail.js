@@ -15,7 +15,7 @@ function showPieceDetail(pieceId) {
     }
 
     // Update detail page content
-    document.getElementById('detail-image').src = piece.image;
+    setOptimizedImage(document.getElementById('detail-image'), piece.image, 'large');
     document.getElementById('detail-title').textContent = piece.title;
     document.getElementById('detail-story').textContent = piece.story;
 
@@ -29,7 +29,8 @@ function showPieceDetail(pieceId) {
         piece.processImages.forEach((imgSrc, index) => {
             const processImg = document.createElement('div');
             processImg.className = 'process-image';
-            processImg.innerHTML = `<img src="${imgSrc}" alt="Making process" />`;
+            processImg.innerHTML = `<img alt="Making process" loading="lazy" decoding="async" />`;
+            setOptimizedImage(processImg.querySelector('img'), imgSrc, 'thumb');
             processImg.addEventListener('click', () => openLightbox(piece.processImages, index));
             processContainer.appendChild(processImg);
         });
@@ -69,7 +70,7 @@ function closeLightbox() {
 
 function updateLightboxImage() {
     const lightboxImage = document.getElementById('lightbox-image');
-    lightboxImage.src = currentLightboxImages[currentLightboxIndex];
+    setOptimizedImage(lightboxImage, currentLightboxImages[currentLightboxIndex], 'large');
 }
 
 function nextLightboxImage() {

@@ -27,15 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
         potteryDatabase.forEach((piece, index) => {
             const item = document.createElement('div');
-            // Variant classes cycle at different lengths (6/5/4) so
             item.className = 'gallery-item';
             item.setAttribute('data-piece', piece.id);
             item.innerHTML = `
-                <img src="${piece.image}" alt="${piece.title}" />
+                <img alt="${piece.title}" decoding="async" />
                 <div class="gallery-item-overlay">
                     <span>View Details</span>
                 </div>
             `;
+            // Small copy of the photo; the first couple of rows load right
+            // away, the rest only as they're about to scroll into view
+            const img = item.querySelector('img');
+            if (index >= count * 2) img.loading = 'lazy';
+            setOptimizedImage(img, piece.image, 'thumb');
             item.addEventListener('click', function() {
                 // Save scroll position so we can restore it when going back
                 sessionStorage.setItem('galleryScrollY', window.scrollY);

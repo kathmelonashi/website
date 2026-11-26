@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Personal pottery gallery website",
   "scripts": {
-    "update-gallery": "node scripts/update-images-only.js"
+    "update-gallery": "node scripts/update-images-only.js && node scripts/optimize-images.js",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "keywords": ["pottery", "gallery"],
   "author": "",
